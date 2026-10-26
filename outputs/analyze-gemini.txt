@@ -1,0 +1,44 @@
+judgments: 2802 (252 repeats; 30 by DeepSeek)
+
+══ docs-qa (10 tasks, 360 persona judgments) ══
+  fit, held-out log-likelihood per judgment: M0 correctness only -0.416, M1 +shared -0.364, M2 +personal -0.333
+    shared quality adds 0.051 ± 0.049; personal taste adds 0.031 ± 0.016   (± = 95% interval; a gain whose interval includes 0 is not established)
+    σ_q 3, τ 1.5  →  subjectivity S = 0.20
+  disagreement: two different personas 20% of the time; the same persona with itself on a repeat 6% (34 repeats)
+  transitivity: 1/238 triads cyclic (0%; 25% if choices were random)
+  error edit: clean A beats A-with-one-error 99% of persona votes, 100% of the judge's; fact check flags the error in 10/10, flags a clean answer in A 0, B 0, D 0 of 10
+  padding: padded B beats plain B 27% of persona votes (priya 0%, marco 90%, aisha 70%, tom 0%, lena 0%, kenji 0%); the judge 0%
+  self-preference: the Opus judge prefers the Opus answer over DeepSeek's 90%, the DeepSeek judge 90% (10 items), the Gemini judge (wrote neither) 80%
+  outcome link (simulated): P(approve as is) = σ(0.20 + 1.57·U); approved 88% when U ≥ 0, 18% when U < 0
+  decision: DeepSeek beats or ties Opus in 33% of persona votes (95% lower bound 23%); non-inferior at δ = 5 points no; answers with a contradicted claim: Opus 0, DeepSeek 0 of 10
+
+══ support-reply (10 tasks, 360 persona judgments) ══
+  fit, held-out log-likelihood per judgment: M0 correctness only -0.458, M1 +shared -0.412, M2 +personal -0.366
+    shared quality adds 0.045 ± 0.049; personal taste adds 0.047 ± 0.025   (± = 95% interval; a gain whose interval includes 0 is not established)
+    σ_q 2, τ 2  →  subjectivity S = 0.50
+  disagreement: two different personas 25% of the time; the same persona with itself on a repeat 11% (36 repeats)
+  transitivity: 2/240 triads cyclic (1%; 25% if choices were random)
+  error edit: clean A beats A-with-one-error 100% of persona votes, 100% of the judge's; fact check flags the error in 10/10, flags a clean answer in A 0, B 0, D 0 of 10
+  padding: padded B beats plain B 33% of persona votes (priya 0%, marco 100%, aisha 100%, tom 0%, lena 0%, kenji 0%); the judge 30%
+  self-preference: the Opus judge prefers the Opus answer over DeepSeek's 100%, the DeepSeek judge 100% (10 items), the Gemini judge (wrote neither) 100%
+  outcome link (simulated): P(approve as is) = σ(0.33 + 1.35·U); approved 86% when U ≥ 0, 25% when U < 0
+  decision: DeepSeek beats or ties Opus in 38% of persona votes (95% lower bound 27%); non-inferior at δ = 5 points no; answers with a contradicted claim: Opus 0, DeepSeek 0 of 10
+
+══ launch-post (10 tasks, 360 persona judgments) ══
+  fit, held-out log-likelihood per judgment: M0 correctness only -0.523, M1 +shared -0.402, M2 +personal -0.341
+    shared quality adds 0.120 ± 0.052; personal taste adds 0.061 ± 0.034   (± = 95% interval; a gain whose interval includes 0 is not established)
+    σ_q 2, τ 3  →  subjectivity S = 0.69
+  disagreement: two different personas 24% of the time; the same persona with itself on a repeat 8% (38 repeats)
+  transitivity: 1/240 triads cyclic (0%; 25% if choices were random)
+  error edit: clean A beats A-with-one-error 100% of persona votes, 100% of the judge's; fact check flags the error in 9/10, flags a clean answer in A 0, B 0, D 0 of 10
+  padding: padded B beats plain B 13% of persona votes (priya 0%, marco 60%, aisha 20%, tom 0%, lena 0%, kenji 0%); the judge 0%
+  self-preference: the Opus judge prefers the Opus answer over DeepSeek's 90%, the DeepSeek judge 80% (10 items), the Gemini judge (wrote neither) 100%
+  outcome link (simulated): P(approve as is) = σ(-0.03 + 1.24·U); approved 82% when U ≥ 0, 18% when U < 0
+  decision: DeepSeek beats or ties Opus in 38% of persona votes (95% lower bound 27%); non-inferior at δ = 5 points no; answers with a contradicted claim: Opus 0, DeepSeek 0 of 10
+
+p-values (raw / Holm over 6): docs-qa shared 0.042/0.084; docs-qa personal 0.000/0.001; support-reply shared 0.070/0.084; support-reply personal 0.000/0.001; launch-post shared 0.000/0.000; launch-post personal 0.000/0.001
+
+Opus and Gemini portrayals of the same persona on the same comparison (same side picked; ties count as a different side):
+  docs-qa        91% of 360 (95% 88%–94%)
+  support-reply  93% of 360 (95% 89%–95%)
+  launch-post    90% of 360 (95% 86%–93%)

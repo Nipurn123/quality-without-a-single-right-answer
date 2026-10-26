@@ -1,0 +1,25 @@
+Agreement with an expert's vote on the 300 comparisons Opus judged (3-way: A, B, tie / on votes where both took a side):
+  expert vs expert             66.5% / 83.4%
+  leaderboard, overall         64.5% / 83.4%
+  leaderboard, per category    64.6% / 83.6%
+  GPT-4 judge                  68.0% / 84.0%
+  Opus 5.5 judge               72.6% / 86.2%
+  Opus 5.5, model names only   63.8% / 81.8%
+  differences (percentage points, 95% bootstrap over comparisons):
+    Opus judge − expert vs expert:        3-way [1.8, 10.1], decided [-0.6, 6.3]
+    Opus judge − leaderboard per category: 3-way [4.4, 11.9], decided [-0.4, 5.8]
+    Opus names only − leaderboard per category: 3-way [-3.1, 1.5], decided [-4.6, 1.1]
+  on the 124 comparisons with three or more votes:
+    majority of the other experts   76.6% / 88.9%
+    expert vs expert                65.7% / 83.0%
+    Opus 5.5 judge                  70.6% / 85.5%
+
+Question recall (58 questions of 20+ words; Opus given the first half): continuation shares a run of 8+ consecutive words with the true rest in 58 (100.0%); its first five words are exact in 54; median longest run 20 of a median 20 words
+
+Correctness graders: 330 answers graded by both; agree on 97.6%, Cohen's κ 0.94; correct: Opus 31.8%, Gemini 30.0%
+When exactly one answer of the pair is correct, experts prefer it (ties as half):
+  reasoning  Opus grades 93.1% of 108   Gemini grades 91.4% of 105   where both agree 94.2% of 95
+  math       Opus grades 98.6% of 179   Gemini grades 98.6% of 179   where both agree 98.6% of 179
+  coding     Opus grades 89.0% of 127   Gemini grades 89.6% of 125   where both agree 91.2% of 114
+
+spend this run: Opus $0.95 over 26 calls, Gemini $0.07 over 55 calls

@@ -1,0 +1,4028 @@
+[
+ {
+  "task": "qa1",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "There are three permission options: allow, ask, and deny.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The allow setting lets the agent proceed without interruption.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The ask setting pauses and requests your explicit approval first.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The deny setting blocks the action outright with no prompt and no exception.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa1",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "A permission rule can resolve to one of three outcomes: allow, ask, and deny.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The allow outcome means the agent proceeds without interruption.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The ask outcome means the agent pauses and asks for your explicit approval first.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The deny outcome means the action is blocked outright, with no prompt and no exception.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Rules can target specific patterns, such as allowing 'git status', asking for 'git *', and denying 'rm *'.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Permission rules are set in 100xprompt.json.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Permission rules can be set at the organization, project, or user level.",
+    "verdict": "contradicted"
+   }
+  ]
+ },
+ {
+  "task": "qa1",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "The allow outcome lets the agent proceed without interruption.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The ask outcome pauses and requests your explicit approval first.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The deny outcome blocks the action outright with no prompt and no exception.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa1",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "A permission rule can resolve to one of three outcomes: allow, ask, and deny.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The allow outcome means the agent proceeds without interruption.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The ask outcome means the agent pauses and asks for your explicit approval first.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The deny outcome means the action is blocked outright, with no prompt and no exception.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Rules can target specific patterns, such as allowing 'git status', asking for 'git *', and denying 'rm *'.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Permission rules are set in 100xprompt.json at the organization, project, or agent level.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa2",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "`inline` runs the Skill in the current turn.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa2",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "If you leave out the `context` field, a Skill defaults to `inline`.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Running `inline` means the Skill executes in the current turn.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The other option for `context` is `fork`.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "`context: fork` runs the Skill in a dedicated sub-run so its work stays isolated.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Omitting `context: fork` uses the default, `inline`.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa2",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "`inline` runs the Skill in the current turn.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa2",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "If you leave out the `context` field, a Skill runs `fork`.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "Running `fork` executes in the current turn of your conversation.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "The other option for `context` is `inline`.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "`context: inline` runs the Skill in a separate sub-run, which keeps its work isolated from the main turn.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "Omitting `context: fork` uses the default, `inline`.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa3",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "By default, 100xprompt waits 5000 ms while fetching a server's tool list.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "If tools are slow to appear on startup, the timeout setting for that server can be increased.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Larger integrations sometimes need more time.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa3",
+  "variant": "B",
+  "claims": []
+ },
+ {
+  "task": "qa3",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "By default, 100xprompt waits 3000 ms (3 seconds) while fetching a server's tool list.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "If tools are slow to appear on startup, the timeout setting for that server can be increased.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Larger integrations sometimes need more time.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa3",
+  "variant": "D",
+  "claims": []
+ },
+ {
+  "task": "qa0",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "Use `100xprompt pr <number>` (such as `100xprompt pr 42`) to bring a PR into your terminal.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "`100xprompt pr 42` fetches and checks out pull request #42, handling fork branches automatically.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It starts 100xprompt in that working tree.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "If the PR was created by the GitHub integration and links a shared session, that session is imported.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You pick up with the agent's full history but a fresh context.",
+    "verdict": "contradicted"
+   }
+  ]
+ },
+ {
+  "task": "qa0",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "In `100xprompt pr 42`, 42 is replaced with the pull request number.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It fetches and checks out the PR.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It launches 100xprompt in that working tree.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "If the PR links a shared session, that session is imported so you continue with full history and context.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa0",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "Use `100xprompt pr <number>` (such as `100xprompt pr 42`).",
+    "verdict": "supported"
+   },
+   {
+    "claim": "`100xprompt pr 42` fetches and checks out pull request #42, handling fork branches automatically.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It starts 100xprompt in that working tree.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "If the PR was created by the GitHub integration and links a shared session, that session is imported.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You pick up with the agent's full history and context.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa0",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "In `100xprompt pr 42`, 42 is replaced with the pull request number.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It fetches and checks out the PR.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It launches 100xprompt in that working tree.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "If the PR links a shared session, that session is imported so you continue with full history and context.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa4",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "The default share setting is Manual (\"manual\").",
+    "verdict": "supported"
+   },
+   {
+    "claim": "In Manual mode, sessions stay private until you explicitly share one.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Nothing leaves your machine until you run the share action on a specific session.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa4",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "The documentation calls Manual (\"share\": \"manual\") \"the safe default for most teams\" and marks it as recommended.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "In manual mode, sessions stay private and nothing leaves your machine until you explicitly share a specific session.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Shared links are always read-only.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The share setting can be set in 100xprompt.json using \"$schema\": \"https://100xprompt.com/config.json\" and \"share\": \"manual\".",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa4",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "The documentation calls Manual (\"share\": \"manual\") \"the safe default for most teams\" and marks it as recommended.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "In manual mode, sessions stay private and nothing leaves your machine until you explicitly share a specific session.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Shared links are always editable.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "The share setting can be set in 100xprompt.json using \"$schema\": \"https://100xprompt.com/config.json\" and \"share\": \"manual\".",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa4",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "The default share setting is Manual (\"manual\").",
+    "verdict": "supported"
+   },
+   {
+    "claim": "In Manual mode, sessions stay private until you explicitly share one.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Nothing leaves your machine until you run the share action on a specific session.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa5",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "Keep secrets/tokens out of your committed 100xprompt.json.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt resolves placeholders at load time.",
+    "verdict": "unsupported"
+   },
+   {
+    "claim": "Use {env:VAR_NAME} to reference or pull tokens and keys from the environment.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Use {file:./secret} to inline secret contents from a local file that is not checked in.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "HUNDREDXPROMPT_CONFIG layers an extra config file on top of your global config without modifying the committed file.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "HUNDREDXPROMPT_PERMISSION supplies inline JSON applied last and takes highest precedence.",
+    "verdict": "contradicted"
+   }
+  ]
+ },
+ {
+  "task": "qa5",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "Keep secrets/tokens out of your committed 100xprompt.json.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt resolves placeholders at load time.",
+    "verdict": "unsupported"
+   },
+   {
+    "claim": "Use {env:VAR_NAME} to reference or pull tokens and keys from the environment.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Use {file:./secret} to inline secret contents from a local file that is not checked in.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "HUNDREDXPROMPT_CONFIG layers an extra config file on top of your global config without modifying the committed file.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "HUNDREDXPROMPT_CONFIG_CONTENT supplies inline JSON applied last and takes highest precedence.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa5",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "Keep secrets out of your committed 100xprompt.json.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Use {env:VAR_NAME} to pull tokens and keys from the environment.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Use {file:./secret} to inline tokens and keys from a local file that isn't checked in.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa5",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "Keep secrets out of your committed 100xprompt.json.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Use {env:VAR_NAME} to pull tokens and keys from the environment.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Use {file:./secret} to inline tokens and keys from a local file that isn't checked in.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa6",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "Providing a precise anchor like \"the billing webhook handler\" or \"the mobile login screen\" gives 100xprompt a clear starting point, whereas broad asks force it to explore more before acting.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Scoping to a directory or file keeps searches tight and answers fast.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Describing the behavior or string for cross-cutting changes allows content search to surface every site so the change is complete.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Content searches always scan every file rather than respecting project ignore rules.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "File searches respect project ignore rules.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Keeping generated output and vendored code ignored keeps searches focused on code you own.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Project-wide context like key areas and conventions can be captured once in memory and rules instead of re-explaining them each session.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Semantic symbol navigation depends on language support for the file in question.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Where language support is not available, 100xprompt falls back to content and pattern search by text rather than resolved meaning.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa6",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "Naming the surface instead of broad asks gives a precise anchor to search from.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Scoping to a directory or file keeps searches tight and answers fast.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Describing behavior or string for cross-cutting changes enables content search to surface every site.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "File and content searches respect your project's ignore rules.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Ignoring generated output and vendored code keeps searches focused on code you own.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Memory and rules can capture repeat context across sessions.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Semantic symbol navigation depends on language support for the file.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Where language support is unavailable, 100xprompt falls back to content and pattern search.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa6",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "Naming the surface instead of broad asks gives a precise anchor to search from.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Scoping to a directory or file keeps searches tight and answers fast.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Describing behavior or string for cross-cutting changes enables content search to surface every site.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "File and content searches respect your project's ignore rules.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Ignoring generated output and vendored code keeps searches focused on code you own.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Memory and rules can capture repeat context across sessions.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Semantic symbol navigation depends on language support for the file.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Where language support is unavailable, 100xprompt falls back to content and pattern search.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa6",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "Providing a precise anchor gives 100xprompt a clear starting point, whereas broad requests force it to explore more before acting.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Scoping to a directory or file keeps searches tight and answers fast.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Describing the behavior or string for cross-cutting changes allows content search to surface every site so the change is complete.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "File and content searches respect your project's ignore rules.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Keeping generated output and vendored code ignored keeps searches focused on code you own.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Project-wide facts can be captured in memory and rules instead of re-explaining them each session.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Semantic symbol navigation depends on language support for each file.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Where language support is not available, 100xprompt falls back to content and pattern search by text rather than resolved meaning.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa9",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "For a single run from the terminal, you can pass the model directly using the --model flag: 100xprompt run --model 100xprompt/pro \"Refactor the billing module\"",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Using the --model flag overrides the model for that specific run without changing your default configuration",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa9",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "You can use the run command with the --model flag: 100xprompt run --model 100xprompt/pro \"Refactor the billing module\"",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The --model flag applies only to that single run",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The default model is set by the \"model\" key in 100xprompt.json so every new session starts on it",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Running 100xprompt models lists every model you can select right now",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa9",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "You can use the run command with the --model flag: 100xprompt run --model 100xprompt/pro \"Refactor the billing module\"",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The --model flag applies only to that single run",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The default model is set by the \"defaultModel\" key in 100xprompt.json",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "Running 100xprompt models lists every model you can select right now",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa9",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "You can use the --model flag for a single run: 100xprompt run --model 100xprompt/pro \"Refactor the billing module\"",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Using the --model flag overrides the model for that run without changing your global default",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa7",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "100xprompt decides the right location for new files.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt fills in the boilerplate your project already uses.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt wires new code into the surrounding code.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt matches your existing folder conventions and import style.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt shows new-file diffs before anything is written to disk.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa7",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "100xprompt decides the right location for new files.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt fills in the boilerplate your project already uses.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt wires new code into the surrounding code.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt matches your existing folder conventions and import style.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt shows new-file diffs before anything is written to disk.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa7",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "100xprompt writes the whole file, not a stub.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt decides where the file belongs.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt fills in the boilerplate your project already uses.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt wires the new file into the surrounding code.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt follows folder conventions and import style even without referencing an existing file.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Referencing an existing file gives 100xprompt more context so new files match conventions more closely.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The new middleware and its test appear as new-file diffs before anything is written to disk.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You can run /undo if the result isn't right.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa7",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "100xprompt writes the whole file, not a stub.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt decides where the file belongs.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt fills in the boilerplate your project already uses.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt wires the new file into the surrounding code.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt follows folder conventions and import style even without referencing an existing file.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Referencing an existing file gives 100xprompt more context so new files match conventions more closely.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The new middleware and its test appear as new-file diffs after they are written to disk.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "You can run /undo if the result isn't right.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr1",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "A single 100xprompt API key covers and unlocks both Flash and Pro without requiring a second key, separate account, or extra credential.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt hosts both Flash and Pro and bills them through a single key.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You can switch to Pro mid-session without restarting by opening the Switch model picker and selecting Pro.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "When switching models, Pro becomes active immediately with no restart and no lost context.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Pro is designed for deep reasoning, hard refactors, and multi-file changes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You can switch back to Flash at any time.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Setting \"model\": \"100xprompt/pro\" in 100xprompt.json configures new sessions to start on Pro by default.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You can point lightweight background steps at Flash using the background_model key.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "Running 100xprompt models lists every available model along with exact identifiers to use in config.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr1",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "A single 100xprompt API key covers and unlocks both Flash and Pro without requiring a second key, separate account, or extra credential.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt hosts both Flash and Pro and bills them through a single key.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You can switch to Pro mid-session without restarting by opening the Switch model picker and selecting Pro.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "When switching models, Pro becomes active immediately with no restart and no lost context.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Pro is designed for deep reasoning, hard refactors, and multi-file changes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You can switch back to Flash at any time.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Setting \"model\": \"100xprompt/pro\" in 100xprompt.json configures new sessions to start on Pro by default.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You can point lightweight background steps at Flash using the small_model key.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Running 100xprompt models lists every available model along with exact identifiers to use in config.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr1",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "A second API key is not required for Pro.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt hosts both Flash and Pro, and a single API key unlocks both without separate provider sign-up or per-model configuration.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Opening the Switch model picker within a session and selecting Pro switches to Pro instantly, mid-conversation, with no restart and no lost context.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Pro is intended for hard refactors and multi-file changes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Setting \"model\": \"100xprompt/pro\" in 100xprompt.json configures new sessions to start on Pro by default.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Running 100xprompt models displays every available model and the exact identifiers to use in configuration.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr1",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "A second API key is not required for Pro.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt hosts both Flash and Pro, and a single API key unlocks both without separate provider sign-up or per-model configuration.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Opening the Switch model picker within a session and selecting Pro switches to Pro instantly, mid-conversation, with no restart and no lost context.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Pro is intended for hard refactors and multi-file changes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Setting \"model\": \"100xprompt/pro\" in 100xprompt.json configures new sessions to start on Pro by default.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Running 100xprompt models displays every available model and the exact identifiers to use in configuration.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr0",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "Disabling keeps a plugin installed but stops its capabilities from loading.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Disabling is instant and reversible.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Recently added plugins can be disabled one at a time using `100xprompt plugin disable <plugin-name>`.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A previously disabled plugin can be re-enabled using `100xprompt plugin enable <plugin-name>`.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Disabling recently added plugins one at a time is the quickest way to isolate a cause.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "`100xprompt plugin remove` uninstalls the plugin and permanently deletes its files from disk.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Installing from a repository with an explicit ref like `@v1` gives a stable, reproducible bundle across machines and teammates.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "`100xprompt plugin marketplace browse` can be used to find vetted plugins with install counts and descriptions.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr0",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "Disabling keeps a plugin installed but stops its capabilities from loading.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Disabling is instant and reversible.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Recently added plugins can be disabled one at a time using `100xprompt plugin disable <plugin-name>`.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A previously disabled plugin is re-enabled using `100xprompt plugin activate <plugin-name>`.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "Disabling recently added plugins one at a time is the quickest way to isolate a cause.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "`100xprompt plugin remove` uninstalls the plugin and permanently deletes its files from disk.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Installing from a repository with an explicit ref like `@v1` gives a stable, reproducible bundle across machines and teammates.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "`100xprompt plugin marketplace browse` can be used to find vetted plugins with install counts and descriptions.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr0",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "Disabling recently added plugins one at a time helps isolate the cause of unexpected behavior.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Disabling keeps the plugin installed but stops its capabilities from loading.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Disabling is reversible and instant.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A plugin can be disabled with `100xprompt plugin disable reviewer`.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A previously disabled plugin can be re-activated with `100xprompt plugin enable reviewer`.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Removing is permanent and deletes the bundle from disk.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr0",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "Disabling recently added plugins one at a time helps isolate the cause of unexpected behavior.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Disabling keeps the plugin installed but stops its capabilities from loading.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Disabling is reversible and instant.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A plugin can be disabled with `100xprompt plugin disable reviewer`.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A previously disabled plugin can be re-activated with `100xprompt plugin enable reviewer`.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Removing is permanent and deletes the bundle from disk.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr2",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "Every command runs under a timeout.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The default timeout for commands is 2 minutes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Telling 100xprompt up front that the e2e suite takes about five minutes allows it to set a longer timeout for that command instead of cutting the run short.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "When a command is running longer than expected, you can send it to the background rather than cancel it.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "When sent to the background, the process keeps going, its output is still captured, and 100xprompt can come back later to check whether it succeeded and read what it produced.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr2",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "Every command 100xprompt runs has a timeout so nothing can hang your session indefinitely.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "By default, a command times out after 10 minutes if it hasn't finished.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "100xprompt can set a longer timeout for a single command when it knows the command will be slow.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Telling 100xprompt up front that the e2e suite takes about five minutes allows it enough time for the run to finish.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You can ask 100xprompt to send a test run to the background so work can continue while it runs.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "When sent to the background, the process keeps running, its output is still saved, and 100xprompt can check later whether it passed and read the results.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "If a command is already taking longer than expected, you can move it to the background instead of cancelling it.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The Background Tasks guide (/automation/background-tasks) explains how to start, monitor, and collect results from background work.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr2",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "Every command runs under a timeout.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The default timeout for commands is 2 minutes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Telling 100xprompt up front that the e2e suite takes about five minutes allows it to set a longer timeout for that command instead of cutting the run short.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "When a command is running longer than expected, you can send it to the background rather than cancel it.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "When sent to the background, the process keeps going, its output is still captured, and 100xprompt can come back later to check whether it succeeded and read what it produced.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr2",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "Every command 100xprompt runs has a timeout so nothing can hang your session indefinitely.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "By default, a command times out after 2 minutes if it hasn't finished.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt can set a longer timeout for a single command when it knows the command will be slow.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Telling 100xprompt up front that the e2e suite takes about five minutes allows it enough time for the run to finish.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You can ask 100xprompt to send a test run to the background so work can continue while it runs.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "When sent to the background, the process keeps running, its output is still saved, and 100xprompt can check later whether it passed and read the results.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "If a command is already taking longer than expected, you can move it to the background instead of cancelling it.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The Background Tasks guide (/automation/background-tasks) explains how to start, monitor, and collect results from background work.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr3",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "@ references inside code blocks or inline code are treated as literal text, not includes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Placing @~/standards/testing.md inside a Markdown code block prevents 100xprompt from loading its contents.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The reference @~/standards/testing.md resolves relative to your home directory.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The referenced file's contents are pulled in as if they were part of the rules file.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr3",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "100xprompt treats @ references inside code blocks or inline code as literal text, not as includes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Wrapping @~/standards/testing.md in a markdown code block prevents 100xprompt from loading its contents.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The ~/ prefix resolves the path relative to your home directory.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The referenced file's contents are pulled in as if they were part of the rules file.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Only text files (such as Markdown, plain text, .json, and .yaml) can be included.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "There is a generous but finite budget for how much rules text is loaded at once.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Headings or short labels can be used around an include reference.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr3",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "@ references inside code blocks or inline code are treated as literal text, not includes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Placing @~/standards/testing.md inside a Markdown code block prevents 100xprompt from loading its contents.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The reference @~/standards/testing.md resolves relative to your home directory.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The referenced file's contents are pulled in as if they were part of the rules file.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr3",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "100xprompt treats @ references inside code blocks or inline code as literal text, not as includes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Wrapping @~/standards/testing.md in a markdown code block prevents 100xprompt from loading its contents.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The ~/ prefix resolves the path relative to the file doing the including.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "The referenced file's contents are pulled in as if they were part of the rules file.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Only text files (such as Markdown, plain text, .json, and .yaml) can be included.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "There is a generous but finite budget for how much rules text is loaded at once.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Headings or short labels can be used around an include reference.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa8",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "The dev server can be sent to the background so it keeps running while the conversation continues.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt can check the status of a background process and read its captured output later.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "If a command runs longer than expected, it can be sent to the background rather than cancelled.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa8",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "A dev server never finishes on its own and can be sent to the background while the conversation keeps going.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The server keeps running while the user chats and makes changes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Output is still captured for background commands.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt can check the server's status and read its output later.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt checks output later specifically to confirm the server started or to look for errors.",
+    "verdict": "unsupported"
+   },
+   {
+    "claim": "A command already running longer than expected can be sent to the background instead of cancelling it.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Background execution works the same way for builds, watch processes, and long test runs.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Background work starting, monitoring, and result collection is documented at /automation/background-tasks.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa8",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "The dev server can be sent to the background so it keeps running while the conversation continues.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt can check the status of a background process and read its captured output later.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "If a command runs longer than expected, it can be sent to the background rather than cancelled.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "qa8",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "A dev server never finishes on its own and can be sent to the background while the conversation keeps going.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The server keeps running while the user chats and makes changes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Output is not captured for background commands.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "100xprompt can check the server's status and read its output later.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt checks output later specifically to confirm the server started or to look for errors.",
+    "verdict": "unsupported"
+   },
+   {
+    "claim": "A command already running longer than expected can be sent to the background instead of cancelling it.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Background execution works the same way for builds, watch processes, and long test runs.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Background work starting, monitoring, and result collection is documented at /automation/background-tasks.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr4",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "The Plan agent is designed to be read-only.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt has two primary agents that you can drive directly.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Plan is look-but-don't-touch and can read, search, and reason across your whole project to scope work and draft a plan without modifying source files (writing only plan notes).",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Build has full read-and-write power to write code, edit files, run commands, and ship real work.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Switching to Plan locks writes for the rest of that turn until you switch back.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "In the terminal, pressing Tab cycles to the next agent, and Shift+Tab goes back.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The agent-list shortcut opens the full picker and defaults to Ctrl+X then a.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "For non-interactive runs, you can pass the agent by name when kicking off the run (e.g., using --agent).",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr4",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "Plan is a primary agent designed for read-only planning and design that can investigate and draft a plan, but cannot edit files.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Moving to Plan locks writes for the rest of that turn until you switch back.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Build is a primary agent with full read-and-write power for making changes, editing files, and running commands.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "In the terminal, pressing Tab cycles to the next agent, and Shift+Tab goes back.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The agent-list shortcut opens the full picker and defaults to Ctrl+X then a.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "For non-interactive runs, you pass the agent by name when kicking off the run.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr4",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "Plan is a primary agent designed for read-only planning and design that can investigate and draft a plan, but cannot edit files.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Moving to Plan locks writes for the rest of that turn until you switch back.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Build is a primary agent with full read-and-write power for making changes, editing files, and running commands.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "In the terminal, pressing Tab cycles to the next agent, and Shift+Tab goes back.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The agent-list shortcut opens the full picker and defaults to Ctrl+X then a.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "For non-interactive runs, you pass the agent by name when kicking off the run.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr4",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "The Plan agent is designed to be read-only.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt has two primary agents that you can drive directly.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Plan is look-but-don't-touch and can read, search, and reason across your whole project to scope work and draft a plan without modifying source files (writing only plan notes).",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Build has full read-and-write power to write code, edit files, run commands, and ship real work.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Switching to Plan locks writes for the rest of that turn until you switch back.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "In the terminal, pressing Tab cycles to the next agent, and Shift+Tab goes back.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The agent-list shortcut to open the full picker defaults to Ctrl+X then l.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "For non-interactive runs, you can pass the agent by name when kicking off the run (e.g., using --agent).",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr9",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "A permission mode controls the stance a 100xprompt session takes toward consequential actions.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The default permission mode asks before making changes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The plan permission mode is for read-only investigation.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The four permission modes in 100xprompt are default, acceptEdits, plan, and auto.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The acceptEdits mode auto-accepts edits.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The auto mode runs freely.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "acceptEdits and auto let the session change your code without asking.",
+    "verdict": "unsupported"
+   },
+   {
+    "claim": "The Permissions documentation guide is located at /configuration/settings.",
+    "verdict": "contradicted"
+   }
+  ]
+ },
+ {
+  "task": "sr9",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "A permission mode controls the stance a 100xprompt session takes toward consequential actions.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The default permission mode asks before making changes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The plan permission mode is for read-only investigation.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The four permission modes in 100xprompt are default, acceptEdits, plan, and auto.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The acceptEdits mode auto-accepts edits.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The auto mode runs freely.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "acceptEdits and auto let the session change your code without asking.",
+    "verdict": "unsupported"
+   },
+   {
+    "claim": "The Permissions documentation guide is located at /configuration/permissions.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr9",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "The default permission mode asks before changes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The plan permission mode is for read-only investigation.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Permissions documentation exists for more details.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr9",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "The default permission mode asks before changes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The plan permission mode is for read-only investigation.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Permissions documentation exists for more details.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr7",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "100xprompt detects the project root automatically, respecting workspaces, monorepos, and per-language project files, so diagnostics and navigation reflect your real project setup rather than an isolated file.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Project markers like go.mod, lockfiles, and similar files help 100xprompt pick the correct root, making diagnostics and navigation more accurate.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Go language support works automatically with no setup or configuration, connecting in the background when 100xprompt touches a Go file and the toolchain is present.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "For Go language support, 100xprompt relies on the Go toolchain you already have installed.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The 100xprompt.json settings reference includes the languageServers key.",
+    "verdict": "contradicted"
+   }
+  ]
+ },
+ {
+  "task": "sr7",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "100xprompt detects the project root automatically, respecting workspaces, monorepos, and per-language project files, so diagnostics and navigation reflect your real project setup rather than an isolated file.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Project markers like go.mod, lockfiles, and similar files help 100xprompt pick the correct root, making diagnostics and navigation more accurate.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Go language support works automatically with no setup or configuration, connecting in the background when 100xprompt touches a Go file and the toolchain is present.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "For Go language support, 100xprompt relies on the Go toolchain you already have installed.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The 100xprompt.json settings reference includes the lsp key.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr7",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "Language support in 100xprompt works automatically without setup or configuration, connecting to the matching language server in the background when touching a file in a supported language if the required toolchain is present.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Go is a supported language in 100xprompt, and it relies on the toolchain you already have installed.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt automatically detects the right project root—respecting workspaces, monorepos, and per-language project files—so diagnostics and navigation reflect your real project setup rather than an isolated file.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Project markers such as lockfiles, go.mod, Cargo.toml, and pyproject.toml help 100xprompt pick the correct root, improving the accuracy of diagnostics and navigation.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr7",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "Language support in 100xprompt works automatically without setup or configuration, connecting to the matching language server in the background when touching a file in a supported language if the required toolchain is present.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Go is a supported language in 100xprompt, and it relies on the toolchain you already have installed.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt automatically detects the right project root—respecting workspaces, monorepos, and per-language project files—so diagnostics and navigation reflect your real project setup rather than an isolated file.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Project markers such as lockfiles, go.mod, Cargo.toml, and pyproject.toml help 100xprompt pick the correct root, improving the accuracy of diagnostics and navigation.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr6",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "The background tasks view always shows the current status, duration, and captured output for every task launched.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The Failed status means the task ended with an error or a non-zero exit code.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "For a failed task, you can read the task's output and error to see what went wrong.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The Aborted status means the task was stopped before it finished.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "For an aborted task, any output captured up to that point is discarded and cannot be seen.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "The Completed status means the task finished cleanly (a command exited successfully or a subagent returned its result).",
+    "verdict": "supported"
+   },
+   {
+    "claim": "For a completed task, you can read its full, final output.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "In every case, captured output stays readable in the background tasks view.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Finished, failed, and aborted tasks can all be cleared from the background tasks view.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A notification confirms when tasks are cleared.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "If a stopped task was a command mid-write (such as a build emitting artifacts), check that it left things in a state you're happy with.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr6",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "The background tasks view always shows the current status, duration, and captured output for every task launched.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The Failed status means the task ended with an error or a non-zero exit code.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "For a failed task, you can read the task's output and error to see what went wrong.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The Aborted status means the task was stopped before it finished.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "For an aborted task, any output captured up to that point is still available to see how far it got.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The Completed status means the task finished cleanly (a command exited successfully or a subagent returned its result).",
+    "verdict": "supported"
+   },
+   {
+    "claim": "For a completed task, you can read its full, final output.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "In every case, captured output stays readable in the background tasks view.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Finished, failed, and aborted tasks can all be cleared from the background tasks view.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A notification confirms when tasks are cleared.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "If a stopped task was a command mid-write (such as a build emitting artifacts), check that it left things in a state you're happy with.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr6",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "The background tasks view always reflects the current status, duration, and captured output for everything launched.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "There is no polling loop to manage; the status reflects reality whenever you look.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The Failed status means the task ended with an error or a non-zero exit code, and you can read the output and error to diagnose what went wrong.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The Aborted status means the task was stopped before it finished; nothing further runs, and the captured output up to that point is still available.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The Running status means the task is still actively executing; you can read the partial output captured so far or stop it.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The Completed status means the task finished cleanly, and the full, final output is available.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Finished, failed, and aborted tasks can be cleared out when you want a clean list.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A running task can be stopped from the background tasks view, which halts the process, changes its status to aborted, and leaves captured output readable.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A notification confirms when tasks are cleared.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Checking the status and clearing tasks can be done from the background tasks view.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr6",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "The background tasks view always reflects the current status, duration, and captured output for everything launched.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "There is no polling loop to manage; the status reflects reality whenever you look.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The Failed status means the task ended with an error or a non-zero exit code, and you can read the output and error to diagnose what went wrong.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The Aborted status means the task was stopped before it finished; nothing further runs, and the captured output up to that point is still available.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The Running status means the task is still actively executing; you can read the partial output captured so far or stop it.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The Completed status means the task finished cleanly, and the full, final output is available.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Finished, failed, and aborted tasks can be cleared out when you want a clean list.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A running task can be stopped from the background tasks view, which halts the process, changes its status to aborted, and leaves captured output readable.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A notification confirms when tasks are cleared.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp2",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "Running `100xprompt` with no arguments drops into the interactive terminal.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Subcommands can be used to script a one-shot task, manage credentials and models, extend the agent, start a server, wire up integrations, or keep the install healthy.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Global options include `--log-level`, `--print-logs`, and shell `completion`.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The reference covers interactive sessions and one-shot prompts.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The reference covers providers, models, servers, swarms, and GitHub.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The reference covers browsing sessions, upgrades, and troubleshooting.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Every command comes with key arguments, important flags, and a short example.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Running `100xprompt --continue` resumes your last session.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Running `100xprompt ./services/api -m 100xprompt/pro` opens a specific folder with a chosen model.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp2",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "The 100xprompt CLI Reference includes commands, flags, and examples from interactive sessions to headless automation, integrations, and maintenance.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Running `100xprompt` with no arguments drops into the interactive terminal.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Subcommands can be used to script a one-shot task, manage credentials and models, extend the agent, start a server, wire up integrations, or keep the install healthy.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The reference covers global options that work with any command.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Commands in the reference are grouped by purpose, each with key arguments, important flags, and a short example.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The reference covers starting a session or running one prompt, connecting providers and picking a model, extending the agent, running a server or opening an interface, running a swarm, wiring up GitHub, browsing and moving sessions, and keeping your install healthy.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp2",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "The 100xprompt CLI Reference includes commands, flags, and examples from interactive sessions to headless automation, integrations, and maintenance.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Running `100xprompt` with no arguments drops into the interactive terminal.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Subcommands can be used to script a one-shot task, manage credentials and models, extend the agent, start a server, wire up integrations, or keep the install healthy.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The reference covers global options that work with any command.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Commands in the reference are grouped by purpose, each with key arguments, important flags, and a short example.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The reference covers starting a session or running one prompt, connecting providers and picking a model, extending the agent, running a server or opening an interface, running a swarm, wiring up GitHub, browsing and moving sessions, and keeping your install healthy.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp2",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "Running `100xprompt` with no arguments drops into the interactive terminal.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Subcommands can be used to script a one-shot task, manage credentials and models, extend the agent, start a server, wire up integrations, or keep the install healthy.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Global options include `--log-level`, `--print-logs`, and shell `completion`.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The reference covers interactive sessions and one-shot prompts.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The reference covers providers, models, servers, swarms, and GitHub.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The reference covers browsing sessions, upgrades, and troubleshooting.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Every command comes with key arguments, important flags, and a short example.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Running `100xprompt --resume` picks up right where you left off.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "Running `100xprompt ./services/api -m 100xprompt/pro` opens a folder with a chosen model.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr8",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "Attempting to create a link is refused when the share setting in 100xprompt.json is set to \"disabled\".",
+    "verdict": "supported"
+   },
+   {
+    "claim": "In \"disabled\" mode, sharing is turned off entirely, the share command is unavailable, no session can be published, and attempting to share a session is refused.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Setting share to \"manual\" in 100xprompt.json is recommended, keeping sessions private until explicitly shared.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Setting share to \"auto\" in 100xprompt.json causes every new session to be shared as soon as it is created and update as it runs.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Running /share or triggering Share session from the command menu shares an open session.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The share link is created and copied to the clipboard automatically.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr8",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "Attempting to create a link is refused when the share setting in 100xprompt.json is set to \"disabled\".",
+    "verdict": "supported"
+   },
+   {
+    "claim": "In \"disabled\" mode, sharing is turned off entirely, the share command is unavailable, no session can be published, and attempting to share a session is refused.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Setting share to \"manual\" in 100xprompt.json is recommended, keeping sessions private until explicitly shared.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Setting share to \"auto\" in 100xprompt.json causes every new session to be shared as soon as it is created and update as it runs.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Running /share or triggering Share session from the command menu shares an open session.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The share link is created and copied to the clipboard automatically.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr8",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "When 100xprompt refuses to create a share link, the cause is sharing being disabled for the project.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The share setting in 100xprompt.json controls sharing.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "When share is set to \"disabled\", the share command is unavailable and no session can be published.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Setting share to \"manual\" is recommended and keeps sessions private until explicitly shared with /share.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Setting share to \"auto\" causes every new session to be shared automatically as soon as it is created.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Running /share or choosing Share session from the command menu creates the link and copies it to the clipboard.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The share link is ready to paste into chat, a ticket, or a pull request.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Sharing can be disabled for regulated, confidential, or sensitive projects, and organizations can enforce this centrally.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Anyone with the link can open it in a browser without an account or install.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Recipients can view the conversation and the work 100xprompt performed, but cannot type into the session, run commands, or edit files.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The shared view updates as you keep working, so you only need to send the link once.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr8",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "When 100xprompt refuses to create a share link, the cause is sharing being disabled for the project.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The share setting in 100xprompt.json controls sharing.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "When share is set to \"disabled\", the share command is unavailable and no session can be published.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Setting share to \"manual\" is recommended and keeps sessions private until explicitly shared with /share.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Setting share to \"auto\" causes every new session to be shared automatically as soon as it is created.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Running /share or choosing Share session from the command menu creates the link and copies it to the clipboard.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The share link is ready to paste into chat, a ticket, or a pull request.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Sharing can be disabled for regulated, confidential, or sensitive projects, and organizations can enforce this centrally.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Anyone with the link can open it in a browser without an account or install.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Recipients can view the conversation and the work 100xprompt performed, but cannot type into the session, run commands, or edit files.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The shared view is a snapshot taken when you run /share, so you need to share again to show later progress.",
+    "verdict": "contradicted"
+   }
+  ]
+ },
+ {
+  "task": "lp0",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "\"How It Works\" presents the mental model behind 100xprompt.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "When you describe an outcome, 100xprompt reads your codebase, forms a plan, uses real tools to make changes, checks its own work, and asks before doing anything sensitive.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt works in a core loop consisting of Understand, Plan, Act, Check, and Finish.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "During the Understand phase, 100xprompt reads the relevant code before touching anything.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "During the Plan phase, it breaks the request into steps, with a visible checklist for larger tasks.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "During the Act phase, it edits files, runs commands, and searches code.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "During the Check phase, it inspects every result and self-corrects mistakes such as failing tests, typos, and missing imports.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "During the Finish phase, it summarizes what changed.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A session is one thread holding the conversation, changes, and the plan so you never re-explain what you're building.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You do not need to know how 100xprompt works to be productive, but it helps you steer it and get better results on short tasks.",
+    "verdict": "contradicted"
+   }
+  ]
+ },
+ {
+  "task": "lp0",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "\"How It Works\" presents the mental model behind 100xprompt.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "When you describe an outcome, 100xprompt reads your codebase, forms a plan, uses real tools to make changes, checks its own work, and asks before doing anything sensitive.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt works in a core loop consisting of Understand, Plan, Act, Check, and Finish.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "During the Understand phase, 100xprompt reads the relevant code before touching anything.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "During the Plan phase, it breaks the request into steps, with a visible checklist for larger tasks.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "During the Act phase, it edits files, runs commands, and searches code.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "During the Check phase, it inspects every result and self-corrects mistakes such as failing tests, typos, and missing imports.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "During the Finish phase, it summarizes what changed.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A session is one thread holding the conversation, changes, and the plan so you never re-explain what you're building.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You do not need to know how 100xprompt works to be productive, but it helps you steer it and get better results on long tasks.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp0",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "\"How It Works\" is a mental model for 100xprompt.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You describe an outcome in plain language; 100xprompt reads your codebase, forms a plan, uses real tools to make changes, checks its own work, and asks before doing anything sensitive.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A session is one continuous conversation about your project that holds your messages, what it has read and changed, tools run, and the running plan.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The core loop is plan, act, check: gather context, take a concrete step, inspect the result, and self-correct when something fails.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You approve edits and commands as they come up.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Reading the guide helps you steer 100xprompt, trust it, and get better results on long tasks.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp0",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "\"How It Works\" is a mental model for 100xprompt.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You describe an outcome in plain language; 100xprompt reads your codebase, forms a plan, uses real tools to make changes, checks its own work, and asks before doing anything sensitive.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A session is one continuous conversation about your project that holds your messages, what it has read and changed, tools run, and the running plan.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The core loop is plan, act, check: gather context, take a concrete step, inspect the result, and self-correct when something fails.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You approve edits and commands as they come up.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Reading the guide helps you steer 100xprompt, trust it, and get better results on long tasks.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr5",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "Every proposed change appears as an inline diff in your session, with additions and removals color-coded, grouped by file, and shown in context.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Diff word-wrapping can be toggled so wide changes stay legible.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt pauses before sensitive changes, such as writing to files outside what you've already allowed.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Choosing 'Allow once' lets a specific change through just this time.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "'Allow always' is powerful and persistent, trusted for edit types in a given project.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Choosing 'Reject' declines the change and allows you to tell 100xprompt what to do instead.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Running `/undo` reverts the last message and any file changes 100xprompt made with it, rolling back both the conversation step and modified files together.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Running `/redo` restores changes you previously undid.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Undo operates on changes made by 100xprompt, keeping your own edits and version-control history intact.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Undo is a safety net for iterating, not a replacement for committing work you want to keep.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr5",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "Diff word-wrapping can be turned on so wide changes remain legible.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Multi-file changes are grouped file by file, with surrounding lines shown for context.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt pauses when a file falls outside what you've already allowed.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "'Allow once' lets a specific change through just this time.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "'Allow always' trusts this kind of change going forward so you are not asked again.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "'Reject' declines the change and allows you to tell 100xprompt what to do instead.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Prompts can be adjusted per project or globally as covered in Permissions documentation.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "`/undo` reverts the last message and the file changes 100xprompt made with it, leaving nothing half-applied.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "`/redo` restores undid changes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Undo only affects changes made by 100xprompt, leaving manual edits and version-control history intact.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "`/undo` is a safety net while iterating and does not replace version control / committing work.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr5",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "Every proposed change appears as an inline diff in your session, with additions and removals color-coded, grouped by file, and shown in context.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Diff word-wrapping can be toggled so wide changes stay legible.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt pauses before sensitive changes, such as writing to files outside what you've already allowed.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Choosing 'Allow once' lets a specific change through just this time.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "'Allow always' is powerful and persistent, trusted for edit types in a given project.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Choosing 'Reject' declines the change and allows you to tell 100xprompt what to do instead.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Running `/undo` reverts the last message and any file changes 100xprompt made with it, rolling back both the conversation step and modified files together.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Running `/redo` restores changes you previously undid.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Undo operates on changes made by 100xprompt, keeping your own edits and version-control history intact.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Undo is a safety net for iterating, not a replacement for committing work you want to keep.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "sr5",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "Diff word-wrapping can be turned on so wide changes remain legible.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Multi-file changes are grouped file by file, with surrounding lines shown for context.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt pauses when a file falls outside what you've already allowed.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "'Allow once' lets a specific change through just this time.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "'Allow always' trusts this kind of change going forward so you are not asked again.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "'Reject' declines the change and allows you to tell 100xprompt what to do instead.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Prompts can be adjusted per project or globally as covered in Permissions documentation.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "`/undo` reverts the last message and the file changes 100xprompt made with it, leaving nothing half-applied.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "`/restore` brings undid changes back.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "Undo only affects changes made by 100xprompt, leaving manual edits and version-control history intact.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "`/undo` is a safety net while iterating and does not replace version control / committing work.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp1",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "100xprompt is an AI coding agent that reads your codebase, edits code, and runs commands.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt scales from one developer to an entire engineering organization.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Shared sessions turn any session into a link so teammates can review changes or pick up where you left off.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Managed configuration allows shipping a common 100xprompt.json so everyone starts from the same baseline.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Permission policies provide allow / ask / deny rules for what the agent may read, edit, and run.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Model and provider control standardizes on the frontier models the organization approves.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Standard tool connections provide shared MCP connections, skills, and commands from day one.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Flexible deployment options include fully managed, or self-managed for maximum control over data flow.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Team settings layer rather than replace.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Control flows down, and safety is preserved at every level.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp1",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "100xprompt provides a shared, governed AI coding agent for teams.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The agent reads your codebase, edits code, and runs commands.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The agent can be shared across a team with common configuration, centrally managed permission policies, standardized models and tool connections, and deployment fitting your organization.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Team settings layer rather than replace.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Organization defaults apply everywhere, projects can tighten or extend them, and each session asks before sensitive actions.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Teams can ship a common 100xprompt.json.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Teams can define allow/ask/deny rules.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Teams can standardize approved models/providers.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Teams can distribute shared MCP connections, skills, and commands.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Deployment options include fully managed or self-managed.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt scales from one developer to an entire engineering organization.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Shared sessions let teammates follow reasoning, review changes, or pick up where a colleague left off.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp1",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "100xprompt is an AI coding agent that reads your codebase, edits code, and runs commands.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt scales from one developer to an entire engineering organization.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Shared sessions turn any session into a link so teammates can review changes or pick up where you left off.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Managed configuration ships a common 100xprompt.yaml so everyone starts from the same baseline.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "Permission policies provide allow / ask / deny rules for what the agent may read, edit, and run.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Model and provider control standardizes on the frontier models the organization approves.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Standard tool connections provide shared MCP connections, skills, and commands from day one.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Flexible deployment options include fully managed, or self-managed for maximum control over data flow.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Team settings layer rather than replace.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Control flows down, and safety is preserved at every level.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp1",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "100xprompt provides a shared, governed AI coding agent for teams.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The agent reads your codebase, edits code, and runs commands.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The agent can be shared across a team with common configuration, centrally managed permission policies, standardized models and tool connections, and deployment fitting your organization.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Team settings layer rather than replace.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Organization defaults apply everywhere, projects can tighten or extend them, and each session asks before sensitive actions.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Teams can ship a common 100xprompt.json.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Teams can define allow/ask/deny rules.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Teams can standardize approved models/providers.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Teams can distribute shared MCP connections, skills, and commands.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Deployment options include fully managed or self-managed.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt scales from one developer to an entire engineering organization.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Shared sessions let teammates follow reasoning, review changes, or pick up where a colleague left off.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp3",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "100xprompt edits files and runs real commands.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Before consequential actions like editing, writing, running a shell command, or reaching outside your project, 100xprompt checks a permission decision: allow, ask, or deny, based on rules you set.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Read-only actions like reading, searching, and listing never interrupt you.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Permission modes can be switched mid-session.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "In Default mode, your configured rules apply as-is.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "In Accept edits mode, file changes are auto-approved and commands still ask.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Plan mode is read-only and is the safest way to explore an unfamiliar codebase.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "In Auto mode, a classifier allows clearly safe actions, still asks on risky ones, and never relaxes a deny.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "When prompted, you can choose Allow once, Allow always, or Reject with feedback.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Permission modes are session-level and never rewrite saved config.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp3",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "Before editing a file, writing a new one, running a shell command, or reaching outside your project, 100xprompt checks a permission decision: allow, ask, or deny—according to rules you set.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Read-only actions are safe by default.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "When 100xprompt asks, you can choose Allow once, Allow always, or Reject.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Config rules pre-approve safe things and lock down risky ones.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Permission modes that can be switched mid-session include Default, Accept edits, Plan (read-only), Auto, and Bypass.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Bypass mode removes every safety prompt.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Bypass mode should only be used in throwaway sandboxes/disposable environments, and never on machines with data you care about, shared/production systems, or untrusted code.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Plan mode is the safest way to start on an unfamiliar codebase.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp3",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "100xprompt edits files and runs real commands.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Before consequential actions like editing, writing, running a shell command, or reaching outside your project, 100xprompt checks a permission decision: allow, ask, or deny, based on rules you set.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Read-only actions like reading, searching, and listing never interrupt you.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Permission modes can be switched mid-session.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "In Default mode, your configured rules apply as-is.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "In Accept edits mode, file changes and commands are auto-approved.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "Plan mode is read-only and is the safest way to explore an unfamiliar codebase.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "In Auto mode, a classifier allows clearly safe actions, still asks on risky ones, and never relaxes a deny.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "When prompted, you can choose Allow once, Allow always, or Reject with feedback.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Permission modes are session-level and never rewrite saved config.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp3",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "Before editing a file, writing a new one, running a shell command, or reaching outside your project, 100xprompt checks a permission decision: allow, ask, or deny—according to rules you set.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Read-only actions are safe by default.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "When 100xprompt asks, you can choose Allow once, Allow always, or Reject.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Config rules pre-approve safe things and lock down risky ones.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Permission modes that can be switched mid-session include Default, Accept edits, Plan (read-only), Auto, and Bypass.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Bypass mode removes every safety prompt.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Bypass mode should only be used in throwaway sandboxes/disposable environments, and never on machines with data you care about, shared/production systems, or untrusted code.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Plan mode is the safest way to start on an unfamiliar codebase.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp5",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "100xprompt is configured with a single JSON file named 100xprompt.json covering models, agents, permissions, MCP servers, keybindings, appearance, memory, and hooks.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Global defaults are set in the 100xprompt config directory in your home folder.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A project-level 100xprompt.json can be added at the root of a repository.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Project settings layer over global settings on a per-key basis.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Lists like instructions and plugin are combined across both global and project files.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Committing the project file allows a team to share permissions, tools, and agents while developers keep personal preferences.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Using 100xprompt.jsonc allows inline // comments and trailing commas.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Environment variables override settings from the shell for CI and one-offs.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp5",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "Everything you can tune in 100xprompt lives in a single 100xprompt.json: models, agents, permissions, MCP servers, keybindings, appearance, memory, and hooks.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Global settings apply personal defaults like model, theme, and keybindings to every project.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A 100xprompt.json can be dropped at the repository root and committed so the whole team shares permissions, tools, and agents.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Project settings win key by key, and anything left out falls back to global defaults.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Lists like instructions and plugin are combined, not replaced.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt.jsonc allows inline // comments and trailing commas.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp5",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "Everything you can tune in 100xprompt lives in a single 100xprompt.json: models, agents, permissions, MCP servers, keybindings, appearance, memory, and hooks.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Global settings apply personal defaults like model, theme, and keybindings to every project.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A 100xprompt.json can be dropped at the repository root and committed so the whole team shares permissions, tools, and agents.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Project settings win key by key, and anything left out falls back to global defaults.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Lists like instructions and plugin are replaced, not combined.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "100xprompt.jsonc allows inline // comments and trailing commas.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp5",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "100xprompt is configured with a single JSON file named 100xprompt.json covering models, agents, permissions, MCP servers, keybindings, appearance, memory, and hooks.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Global defaults are set in the home config directory.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A project-level 100xprompt.json is added at the repository root.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Project settings layer over global settings per key.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Lists like instructions and plugin combine.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Committing the project file allows the team to share permissions, tools, and agents while developers keep personal preferences.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt.jsonc allows inline // comments and trailing commas.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Environment variables override settings from the shell for CI and one-offs.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp6",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "Pressing Ctrl+D while a command is running moves it to the background.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "When a command is moved to the background, the process keeps going, its output is still captured, and the prompt is free again.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Background Tasks come in two freely combinable kinds: background commands and background subagents.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Background commands allow builds, watchers, dev servers, and long test matrices to run in parallel while you keep editing.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Background subagents work autonomously and in parallel, then hand back results when each one finishes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A running-task indicator (e.g., '2 shells') shows that work is in flight.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Pressing Ctrl+B when nothing is actively running lets you see what is still going, how long it has taken, and the output each task has captured.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp6",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "Pressing Ctrl+B while a command is running moves it to the background.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "When a command is moved to the background, the process keeps going, its output is still captured, and the prompt is free again.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Background Tasks come in two freely combinable kinds: background commands and background subagents.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Background commands allow builds, watchers, dev servers, and long test matrices to run in parallel while you keep editing.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Background subagents work autonomously and in parallel, then hand back results when each one finishes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A running-task indicator (e.g., '2 shells') shows that work is in flight.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Pressing Ctrl+B when nothing is actively running lets you see what is still going, how long it has taken, and the output each task has captured.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp6",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "100xprompt features Background Tasks that let long jobs and parallel subagents run while you keep working, collecting results when done.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A running command or entire subagent can be pushed off the main thread so the session stays live.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A slow build or independent research job does not block the conversation.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A running shell command (build, watcher, dev server, long test matrix) can be sent to the background with Ctrl+B.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "When a command is sent to the background, its output is still captured and the prompt is free.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Specialized subagents can be launched that work autonomously and in parallel, then hand results back.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Pressing Ctrl+B again when nothing is actively running opens the background tasks view.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A running-task indicator shows how many background shells are live.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp6",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "100xprompt features Background Tasks that let long jobs and parallel subagents run while you keep working, collecting results when done.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A running command or entire subagent can be pushed off the main thread so the session stays live.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A slow build or independent research job does not block the conversation.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A running shell command (build, watcher, dev server, long test matrix) can be sent to the background with Ctrl+B.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "When a command is sent to the background, its output is still captured and the prompt is free.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Specialized subagents can be launched that work autonomously and in parallel, then hand results back.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Pressing Ctrl+B again when nothing is actively running opens the background tasks view.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A running-task indicator shows how many background shells are live.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp4",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "Run 100xprompt on your GitHub issues and pull requests—mention it, and it proposes a change as a real pull request.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt runs inside your repository's GitHub Actions.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Mentioning `/100xprompt` or `/oc` on an issue or PR reads the full context, edits your codebase, and pushes work back as a commit or a new pull request.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "On issues, it can reply with analysis or open a PR that closes the issue.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "On PRs, it commits to the branch.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It checks write/admin access.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It uses repo/org secrets.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It replies inline.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It links every run.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Install from your repo with `100xprompt github install`.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp4",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "Mention 100xprompt on an issue or pull request, and it proposes a change as a real pull request.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It is the same agent used in your terminal, running inside your repo's GitHub Actions.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "On issues, commenting `/oc` or `/100xprompt` summarizes the thread, or works on your request and opens a PR that closes the issue.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "On pull requests, it commits changes straight to the PR's branch, even on forks.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "On a specific line in a PR, it reviews the code or applies your requested edit.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It uses your own repository or organization secrets.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It checks that the commenter has admin access.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "It links every run so you can see exactly what it did.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Install with `100xprompt github install`.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Commit the generated workflow, add your provider key, and mention the agent to complete setup.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp4",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "Run 100xprompt on your GitHub issues and pull requests—mention it, and it proposes a change as a real pull request.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It runs inside your repository's GitHub Actions.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Mentioning `/100xprompt` or `/oc` on an issue or PR reads the full context, edits your codebase, and pushes work back as a commit or a new pull request.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "On issues, it can reply with analysis or open a PR that closes the issue.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "On PRs, it commits to the branch.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It checks write/admin access.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It uses repo/org secrets.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It replies inline.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It links every run.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Install from your repo with `100xprompt github install`.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp4",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "Mention 100xprompt on an issue or pull request, and it proposes a change as a real pull request.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It is the same agent used in your terminal, running inside your repo's GitHub Actions.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "On issues, commenting `/oc` or `/100xprompt` summarizes the thread, or works on your request and opens a PR that closes the issue.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "On pull requests, it commits changes straight to the PR's branch, even on forks.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "On a specific line in a PR, it reviews the code or applies your requested edit.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It uses your own repository or organization secrets.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It checks that the commenter has write or admin access.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "It links every run so you can see exactly what it did.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Install with `100xprompt github install`.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Commit the generated workflow, add your provider key, and mention the agent to complete setup.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp9",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "Every task in 100xprompt runs on an agent: a focused operator with its own instructions, model, and allowed tools.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Users can switch between purpose-built agents, fan work out to parallel subagents, and craft custom agents.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You always talk to one primary agent driving your session.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A primary agent can delegate self-contained work to subagents running in isolated contexts, keeping the main conversation clean while reporting back concise results.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Built-in agents include Build and Plan as primary agents, and General, Explore, and Verifier as subagents.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You can switch agents using Tab/Shift+Tab, an agent picker, or by @-mentioning a subagent.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You can define your own custom agent specialist in Markdown.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp9",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "Every task in 100xprompt runs on a focused agent with its own instructions, model, and set of allowed tools.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Five agents come built-in: Build, Plan, Explore, General, and Verifier.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Build writes code, edits files, and runs commands.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Plan provides read-only planning that drafts a plan without modifying source files.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Explore is a fast, read-only codebase search subagent.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "General is for parallel research and multi-step tasks.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Verifier re-runs builds, tests, and linters to confirm changes work.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The primary agent hands self-contained work to subagents that each run in an isolated context and report back concise results to keep the main conversation clean.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Press Tab to switch agents.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Type @ to hand a subagent a task inline.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You can scope work with Plan, then execute with Build.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Custom agents can be written in Markdown.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp9",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "Every task in 100xprompt runs on a focused agent with its own instructions, model, and set of allowed tools.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Five agents come built-in: Build, Plan, Explore, General, and Verifier.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Build writes code, edits files, and runs commands.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Plan provides read-only planning that drafts a plan without modifying source files.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Explore is a fast, read-only codebase search subagent.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "General is for parallel research and multi-step tasks.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Verifier re-runs builds, tests, and linters to confirm changes work.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The primary agent hands self-contained work to subagents that each run in an isolated context and report back concise results to keep the main conversation clean.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Press Tab to switch agents.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Type # to hand a subagent a task inline.",
+    "verdict": "contradicted"
+   },
+   {
+    "claim": "You can scope work with Plan, then execute with Build.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Custom agents can be written in Markdown.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp9",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "Every task in 100xprompt runs on an agent: a focused operator with its own instructions, model, and allowed tools.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Users can switch between purpose-built agents, fan work out to parallel subagents, and craft custom agents.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You always talk to one primary agent driving your session.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A primary agent can delegate self-contained work to subagents running in isolated contexts, keeping the main conversation clean while reporting back concise results.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Built-in agents include Build and Plan as primary agents, and General, Explore, and Verifier as subagents.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You can switch agents using Tab/Shift+Tab, an agent picker, or by @-mentioning a subagent.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You can define your own custom agent specialist in Markdown.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp8",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "100xprompt is an AI coding agent that reads your codebase, edits code across many files, runs commands to verify the change, and keeps going until the task is done.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt edits code across many files with coordinated refactors, features, and fixes, reviewable diff by diff.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt understands large codebases by searching, navigating, and tracing relationships so changes are grounded in how code actually works.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt runs commands and tests including builds, test suites, linters, and scripts, iterating until the result is green.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt breaks big goals into steps and spins up focused subagents to work in parallel.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt asks before doing anything sensitive.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Every change made by 100xprompt is reviewable, refinable, or can be rolled back.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt runs on the most capable frontier models.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt runs across terminal, browser, and desktop app.",
+    "verdict": "unsupported"
+   }
+  ]
+ },
+ {
+  "task": "lp8",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "100xprompt is an AI coding agent that reads your codebase, edits code across many files, runs commands to verify the change, and keeps going until the task is done.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt runs on the most capable frontier models and follows you across terminal, browser, and IDE.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt plugs into one core loop: understand your project, act, verify, and remember what it learned.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt asks before sensitive actions.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Every change made by 100xprompt is yours to review, refine, or roll back.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Build capabilities include coordinated multi-file edits with reviewable diffs, large-codebase understanding, running builds/tests/linters/scripts until green, and multi-step agentic tasks with focused subagents working in parallel.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The capability map includes Build, Think, Extend, Automate, Work anywhere, and Share and collaborate.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp8",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "100xprompt is an AI coding agent that reads your codebase, edits code across many files, runs commands to verify the change, and keeps going until the task is done.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt edits code across many files with coordinated refactors, features, and fixes, reviewable diff by diff.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt understands large codebases by searching, navigating, and tracing relationships so changes are grounded in how your code actually works.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt runs commands and tests including builds, test suites, linters, and scripts, iterating until the result is green.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt breaks big goals into steps and spins up focused subagents to work in parallel.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt asks before doing anything sensitive.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Every change made by 100xprompt is reviewable, refinable, or can be rolled back.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt runs on the most capable frontier models across terminal, browser, and IDE.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp8",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "100xprompt is an AI coding agent that reads your codebase, edits code across many files, runs commands to verify the change, and keeps going until the task is done.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt runs on the most capable frontier models and follows you across terminal, browser, and IDE.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt plugs into one core loop: understand your project, act, verify, and remember what it learned.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "100xprompt asks before sensitive actions.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Every change made by 100xprompt is yours to review, refine, or roll back.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Build capabilities include coordinated multi-file edits with reviewable diffs, large-codebase understanding, running builds/tests/linters/scripts until green, and multi-step agentic tasks with focused subagents working in parallel.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The capability map includes Build, Think, Extend, Automate, Work anywhere, and Share and collaborate.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp7",
+  "variant": "A",
+  "claims": [
+   {
+    "claim": "The web app runs the full 100xprompt agent in your browser.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "One command gives you a complete workspace.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You can chat with the agent and watch it reason and act step by step.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Live diffs of every change appear side-by-side or inline before you accept them.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The workspace includes a file explorer and built-in editor.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The workspace includes an integrated terminal with no window switching.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A live task list ticks off the agent's plan as work completes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Permission and question prompts appear whenever the agent needs your input.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "MCP servers can be managed from the interface.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Everything updates in real time.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Your code, files, and terminal stay on your machine.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The workspace is reachable from any device on your network.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp7",
+  "variant": "C",
+  "claims": [
+   {
+    "claim": "The web app runs the full 100xprompt agent in your browser.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "One command gives you a complete workspace.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "You can chat with the agent and watch it reason and act step by step.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Live diffs of every change appear side-by-side or inline before you accept them.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The workspace includes a file explorer and built-in editor.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The workspace includes an integrated terminal with no window switching.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "A live task list ticks off the agent's plan as work completes.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Permission and question prompts appear whenever the agent needs your input.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "MCP servers can be managed from the interface.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Everything updates in real time.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Your code, files, and terminal stay on your machine.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The workspace is reachable from any device on the internet.",
+    "verdict": "contradicted"
+   }
+  ]
+ },
+ {
+  "task": "lp7",
+  "variant": "B",
+  "claims": [
+   {
+    "claim": "100xprompt runs in your browser and provides the full agent in one workspace.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The workspace allows chatting with the agent, reviewing live diffs, browsing and editing files, and driving an integrated terminal.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The workspace is started with one command.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The workspace includes a running task list.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Inline prompts appear whenever the agent needs your input.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Everything updates in real time.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Panels share the same live session.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The web app runs on your own machine.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The web app is reachable from any device on your network.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Your code, files, and terminal stay on the machine you launch it from.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "MCP servers can be added and managed from the interface.",
+    "verdict": "supported"
+   }
+  ]
+ },
+ {
+  "task": "lp7",
+  "variant": "D",
+  "claims": [
+   {
+    "claim": "100xprompt runs in your browser and provides the full agent in one workspace.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The workspace allows chatting with the agent, reviewing live diffs, browsing and editing files, and driving an integrated terminal.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The workspace is started with one command.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The workspace includes a running task list.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Inline prompts appear whenever the agent needs your input.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Everything updates in real time.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Panels share the same live session.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The web app runs on your own machine.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "The web app is reachable from any device on your network.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "Your code, files, and terminal stay on the machine you launch it from.",
+    "verdict": "supported"
+   },
+   {
+    "claim": "MCP servers can be added and managed from the interface.",
+    "verdict": "supported"
+   }
+  ]
+ }
+]

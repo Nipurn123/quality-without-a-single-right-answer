@@ -1,0 +1,75 @@
+{
+ "family": "opus",
+ "facts": {
+  "answers": 360,
+  "agreeOnFlag": 357,
+  "bySource": {
+   "100xprompt-1": {
+    "A": {
+     "opus": 0,
+     "gemini": 0,
+     "of": 30
+    },
+    "B": {
+     "opus": 0,
+     "gemini": 0,
+     "of": 30
+    },
+    "C": {
+     "opus": 29,
+     "gemini": 29,
+     "of": 30
+    },
+    "D": {
+     "opus": 0,
+     "gemini": 0,
+     "of": 30
+    }
+   },
+   "100xprompt-2": {
+    "A": {
+     "opus": 0,
+     "gemini": 0,
+     "of": 30
+    },
+    "B": {
+     "opus": 0,
+     "gemini": 0,
+     "of": 30
+    },
+    "C": {
+     "opus": 29,
+     "gemini": 28,
+     "of": 30
+    },
+    "D": {
+     "opus": 0,
+     "gemini": 0,
+     "of": 30
+    }
+   },
+   "uv": {
+    "A": {
+     "opus": 0,
+     "gemini": 0,
+     "of": 30
+    },
+    "B": {
+     "opus": 0,
+     "gemini": 0,
+     "of": 30
+    },
+    "C": {
+     "opus": 27,
+     "gemini": 27,
+     "of": 30
+    },
+    "D": {
+     "opus": 0,
+     "gemini": 0,
+     "of": 30
+    }
+   }
+  }
+ }
+}

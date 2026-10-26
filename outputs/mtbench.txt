@@ -1,0 +1,28 @@
+3355 expert votes by 65 experts on 1814 comparisons; 2400 GPT-4 verdicts; 960 answers; models alpaca-13b, claude-v1, gpt-3.5-turbo, gpt-4, llama-13b, vicuna-13b-v1.2
+correctness: 330 answers graded, 105 correct
+Opus judged 300 comparisons; Opus spend this run $0.00 over 0 calls
+
+Held-out log-likelihood gain per vote of each added term (95% interval; † = significant after Holm–Bonferroni over the 19 tests):
+
+category    votes   +correctness       +shared quality     +personal taste     S     experts disagree  shared length effect  correct answer preferred
+writing       378    (no reference)      +0.037 ± 0.029      +0.009 ± 0.010      0.07    33% (241 pairs)      +0.52               
+roleplay      464    (no reference)      +0.057 ± 0.030 †    +0.009 ± 0.010      0.05    28% (345 pairs)      +0.65               
+humanities    452    (no reference)      +0.017 ± 0.022      +0.006 ± 0.008      0.03    28% (363 pairs)      +0.37               
+stem          416    (no reference)      +0.003 ± 0.011      +0.001 ± 0.007      0.02    24% (279 pairs)      +0.30               
+extraction    402    (no reference)      +0.065 ± 0.033 †    +0.013 ± 0.012      0.04    21% (262 pairs)      +0.13               
+reasoning     434    +0.071 ± 0.029 †    +0.034 ± 0.014 †    -0.000 ± 0.001      0.00    16% (316 pairs)      +0.31               93% of 108
+math          412    +0.119 ± 0.031 †    +0.004 ± 0.005      +0.008 ± 0.007      0.02    14% (322 pairs)      +0.10               99% of 179
+coding        397    +0.031 ± 0.021 †    +0.014 ± 0.011      +0.002 ± 0.003      0.01    18% (240 pairs)      -0.04               89% of 127
+
+p-values (raw / Holm): writing s 0.012/0.157 p 0.062/0.561; roleplay s 0.000/0.003 p 0.080/0.639; humanities s 0.142/0.994 p 0.192/0.994; stem s 0.645/1.000 p 0.723/1.000; extraction s 0.000/0.002 p 0.032/0.323; reasoning c 0.000/0.000 s 0.000/0.000 p 0.892/1.000; math c 0.000/0.000 s 0.145/0.994 p 0.026/0.284; coding c 0.004/0.050 s 0.019/0.223 p 0.342/1.000
+
+Agreement with an expert's vote on the same comparison (3-way: A, B, tie; and on votes where both picked a side):
+all          300 comparisons   expert–expert 67% / 83%   GPT-4–expert 68% / 84%   Opus 5.5–expert 73% / 86%
+writing       38 comparisons   expert–expert 47% / 67%   GPT-4–expert 63% / 74%   Opus 5.5–expert 60% / 72%
+roleplay      38 comparisons   expert–expert 64% / 73%   GPT-4–expert 62% / 70%   Opus 5.5–expert 69% / 78%
+humanities    38 comparisons   expert–expert 59% / 81%   GPT-4–expert 74% / 90%   Opus 5.5–expert 72% / 87%
+stem          38 comparisons   expert–expert 77% / 90%   GPT-4–expert 81% / 91%   Opus 5.5–expert 76% / 86%
+extraction    38 comparisons   expert–expert 65% / 82%   GPT-4–expert 70% / 88%   Opus 5.5–expert 73% / 95%
+reasoning     38 comparisons   expert–expert 78% / 89%   GPT-4–expert 64% / 87%   Opus 5.5–expert 80% / 91%
+math          38 comparisons   expert–expert 73% / 95%   GPT-4–expert 63% / 93%   Opus 5.5–expert 78% / 100%
+coding        34 comparisons   expert–expert 61% / 94%   GPT-4–expert 68% / 86%   Opus 5.5–expert 70% / 89%

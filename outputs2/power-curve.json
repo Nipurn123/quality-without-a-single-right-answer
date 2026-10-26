@@ -1,0 +1,450 @@
+[
+ {
+  "scenario": "conservative S=0.05",
+  "R": 10,
+  "T": 12,
+  "rep": 0.1,
+  "power": 0.066
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 15,
+  "T": 12,
+  "rep": 0.1,
+  "power": 0.103
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 20,
+  "T": 12,
+  "rep": 0.1,
+  "power": 0.135
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 25,
+  "T": 12,
+  "rep": 0.1,
+  "power": 0.086
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 30,
+  "T": 12,
+  "rep": 0.1,
+  "power": 0.12
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 40,
+  "T": 12,
+  "rep": 0.1,
+  "power": 0.096
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 50,
+  "T": 12,
+  "rep": 0.1,
+  "power": 0.141
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 60,
+  "T": 12,
+  "rep": 0.1,
+  "power": 0.152
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 10,
+  "T": 12,
+  "rep": 1,
+  "power": 0.182
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 15,
+  "T": 12,
+  "rep": 1,
+  "power": 0.234
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 20,
+  "T": 12,
+  "rep": 1,
+  "power": 0.238
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 25,
+  "T": 12,
+  "rep": 1,
+  "power": 0.283
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 30,
+  "T": 12,
+  "rep": 1,
+  "power": 0.386
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 40,
+  "T": 12,
+  "rep": 1,
+  "power": 0.36
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 50,
+  "T": 12,
+  "rep": 1,
+  "power": 0.435
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 60,
+  "T": 12,
+  "rep": 1,
+  "power": 0.502
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 10,
+  "T": 24,
+  "rep": 0.1,
+  "power": 0.108
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 15,
+  "T": 24,
+  "rep": 0.1,
+  "power": 0.14
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 20,
+  "T": 24,
+  "rep": 0.1,
+  "power": 0.104
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 25,
+  "T": 24,
+  "rep": 0.1,
+  "power": 0.133
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 30,
+  "T": 24,
+  "rep": 0.1,
+  "power": 0.14
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 40,
+  "T": 24,
+  "rep": 0.1,
+  "power": 0.184
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 50,
+  "T": 24,
+  "rep": 0.1,
+  "power": 0.183
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 60,
+  "T": 24,
+  "rep": 0.1,
+  "power": 0.218
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 10,
+  "T": 24,
+  "rep": 1,
+  "power": 0.242
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 15,
+  "T": 24,
+  "rep": 1,
+  "power": 0.314
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 20,
+  "T": 24,
+  "rep": 1,
+  "power": 0.436
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 25,
+  "T": 24,
+  "rep": 1,
+  "power": 0.418
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 30,
+  "T": 24,
+  "rep": 1,
+  "power": 0.533
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 40,
+  "T": 24,
+  "rep": 1,
+  "power": 0.587
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 50,
+  "T": 24,
+  "rep": 1,
+  "power": 0.696
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "R": 60,
+  "T": 24,
+  "rep": 1,
+  "power": 0.789
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 10,
+  "T": 12,
+  "rep": 0.1,
+  "power": 0.119
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 15,
+  "T": 12,
+  "rep": 0.1,
+  "power": 0.18
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 20,
+  "T": 12,
+  "rep": 0.1,
+  "power": 0.135
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 25,
+  "T": 12,
+  "rep": 0.1,
+  "power": 0.207
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 30,
+  "T": 12,
+  "rep": 0.1,
+  "power": 0.231
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 40,
+  "T": 12,
+  "rep": 0.1,
+  "power": 0.238
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 50,
+  "T": 12,
+  "rep": 0.1,
+  "power": 0.318
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 60,
+  "T": 12,
+  "rep": 0.1,
+  "power": 0.284
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 10,
+  "T": 12,
+  "rep": 1,
+  "power": 0.403
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 15,
+  "T": 12,
+  "rep": 1,
+  "power": 0.531
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 20,
+  "T": 12,
+  "rep": 1,
+  "power": 0.578
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 25,
+  "T": 12,
+  "rep": 1,
+  "power": 0.678
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 30,
+  "T": 12,
+  "rep": 1,
+  "power": 0.76
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 40,
+  "T": 12,
+  "rep": 1,
+  "power": 0.864
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 50,
+  "T": 12,
+  "rep": 1,
+  "power": 0.915
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 60,
+  "T": 12,
+  "rep": 1,
+  "power": 0.965
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 10,
+  "T": 24,
+  "rep": 0.1,
+  "power": 0.167
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 15,
+  "T": 24,
+  "rep": 0.1,
+  "power": 0.189
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 20,
+  "T": 24,
+  "rep": 0.1,
+  "power": 0.237
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 25,
+  "T": 24,
+  "rep": 0.1,
+  "power": 0.285
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 30,
+  "T": 24,
+  "rep": 0.1,
+  "power": 0.345
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 40,
+  "T": 24,
+  "rep": 0.1,
+  "power": 0.457
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 50,
+  "T": 24,
+  "rep": 0.1,
+  "power": 0.415
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 60,
+  "T": 24,
+  "rep": 0.1,
+  "power": 0.536
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 10,
+  "T": 24,
+  "rep": 1,
+  "power": 0.594
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 15,
+  "T": 24,
+  "rep": 1,
+  "power": 0.759
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 20,
+  "T": 24,
+  "rep": 1,
+  "power": 0.833
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 25,
+  "T": 24,
+  "rep": 1,
+  "power": 0.908
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 30,
+  "T": 24,
+  "rep": 1,
+  "power": 0.966
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 40,
+  "T": 24,
+  "rep": 1,
+  "power": 0.978
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 50,
+  "T": 24,
+  "rep": 1,
+  "power": 0.993
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "R": 60,
+  "T": 24,
+  "rep": 1,
+  "power": 0.998
+ }
+]

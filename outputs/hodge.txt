@@ -1,0 +1,16 @@
+MT-Bench expert votes, one comparison graph per question and turn (six models); tie rate 23.2%; 1.85 votes per edge
+within-expert triads (one expert judged all three pairs of three models on one question and turn): 0
+
+ridge 0.1    160 graphs   cyclic share observed 20.1% vs 30.7% under the null   upper tail 0 (0.0%)   lower tail 34 (21.3%); 5% each expected
+ridge 0.01   160 graphs   cyclic share observed 20.1% vs 28.4% under the null   upper tail 0 (0.0%)   lower tail 33 (20.6%); 5% each expected
+ridge 0.001  160 graphs   cyclic share observed 20.1% vs 28.1% under the null   upper tail 0 (0.0%)   lower tail 32 (20.0%); 5% each expected
+
+by category, ridge 0.1:
+writing       20 graphs   cyclic share observed 25.6% vs 29.9% under the null   upper tail 0 (0.0%)   lower tail 3 (15.0%); 5% each expected
+roleplay      20 graphs   cyclic share observed 25.7% vs 28.5% under the null   upper tail 0 (0.0%)   lower tail 1 (5.0%); 5% each expected
+humanities    20 graphs   cyclic share observed 19.1% vs 28.0% under the null   upper tail 0 (0.0%)   lower tail 2 (10.0%); 5% each expected
+stem          20 graphs   cyclic share observed 19.6% vs 26.5% under the null   upper tail 0 (0.0%)   lower tail 2 (10.0%); 5% each expected
+extraction    20 graphs   cyclic share observed 15.7% vs 30.4% under the null   upper tail 0 (0.0%)   lower tail 9 (45.0%); 5% each expected
+reasoning     20 graphs   cyclic share observed 22.1% vs 37.8% under the null   upper tail 0 (0.0%)   lower tail 4 (20.0%); 5% each expected
+math          20 graphs   cyclic share observed 13.2% vs 32.6% under the null   upper tail 0 (0.0%)   lower tail 9 (45.0%); 5% each expected
+coding        20 graphs   cyclic share observed 19.3% vs 31.5% under the null   upper tail 0 (0.0%)   lower tail 4 (20.0%); 5% each expected

@@ -1,0 +1,73 @@
+design: raters × tasks (answers = 4 × tasks), share of cells rated twice
+
+scenario opus docs-qa: Var task 0.000, α 2.220, β 0.205, βT 0.000, γ 0.433, ε 0.220; S = 0.16
+  10 × 12 (48 answers, 53 ratings each, 10% repeated): estimated S 95% in 0.10 to 0.26; power taste 100%, leniency 100%
+  25 × 12 (48 answers, 53 ratings each, 10% repeated): estimated S 95% in 0.11 to 0.25; power taste 100%, leniency 100%
+  25 × 24 (96 answers, 106 ratings each, 10% repeated): estimated S 95% in 0.12 to 0.22; power taste 100%, leniency 100%
+  25 × 12 (48 answers, 96 ratings each, 100% repeated): estimated S 95% in 0.11 to 0.25; power taste 100%, leniency 100%
+  40 × 12 (48 answers, 96 ratings each, 100% repeated): estimated S 95% in 0.12 to 0.25; power taste 100%, leniency 100%
+  25 × 24 (96 answers, 192 ratings each, 100% repeated): estimated S 95% in 0.12 to 0.22; power taste 100%, leniency 100%
+  40 × 24 (96 answers, 192 ratings each, 100% repeated): estimated S 95% in 0.13 to 0.22; power taste 100%, leniency 100%
+
+scenario opus support-reply: Var task 0.000, α 0.893, β 0.037, βT 0.000, γ 0.312, ε 0.204; S = 0.26
+  10 × 12 (48 answers, 53 ratings each, 10% repeated): estimated S 95% in 0.16 to 0.41; power taste 100%, leniency 92%
+  25 × 12 (48 answers, 53 ratings each, 10% repeated): estimated S 95% in 0.18 to 0.38; power taste 100%, leniency 100%
+  25 × 24 (96 answers, 106 ratings each, 10% repeated): estimated S 95% in 0.20 to 0.34; power taste 100%, leniency 100%
+  25 × 12 (48 answers, 96 ratings each, 100% repeated): estimated S 95% in 0.18 to 0.38; power taste 100%, leniency 100%
+  40 × 12 (48 answers, 96 ratings each, 100% repeated): estimated S 95% in 0.18 to 0.37; power taste 100%, leniency 100%
+  25 × 24 (96 answers, 192 ratings each, 100% repeated): estimated S 95% in 0.20 to 0.34; power taste 100%, leniency 100%
+  40 × 24 (96 answers, 192 ratings each, 100% repeated): estimated S 95% in 0.20 to 0.33; power taste 100%, leniency 100%
+
+scenario opus launch-post: Var task 0.000, α 1.169, β 0.062, βT 0.000, γ 0.709, ε 0.190; S = 0.38
+  10 × 12 (48 answers, 53 ratings each, 10% repeated): estimated S 95% in 0.27 to 0.51; power taste 100%, leniency 90%
+  25 × 12 (48 answers, 53 ratings each, 10% repeated): estimated S 95% in 0.28 to 0.52; power taste 100%, leniency 100%
+  25 × 24 (96 answers, 106 ratings each, 10% repeated): estimated S 95% in 0.31 to 0.47; power taste 100%, leniency 100%
+  25 × 12 (48 answers, 96 ratings each, 100% repeated): estimated S 95% in 0.28 to 0.52; power taste 100%, leniency 100%
+  40 × 12 (48 answers, 96 ratings each, 100% repeated): estimated S 95% in 0.28 to 0.51; power taste 100%, leniency 100%
+  25 × 24 (96 answers, 192 ratings each, 100% repeated): estimated S 95% in 0.31 to 0.47; power taste 100%, leniency 100%
+  40 × 24 (96 answers, 192 ratings each, 100% repeated): estimated S 95% in 0.31 to 0.47; power taste 100%, leniency 100%
+
+scenario gemini docs-qa: Var task 0.000, α 1.996, β 1.329, βT 0.000, γ 1.312, ε 0.555; S = 0.40
+  10 × 12 (48 answers, 53 ratings each, 10% repeated): estimated S 95% in 0.28 to 0.56; power taste 100%, leniency 100%
+  25 × 12 (48 answers, 53 ratings each, 10% repeated): estimated S 95% in 0.29 to 0.54; power taste 100%, leniency 100%
+  25 × 24 (96 answers, 106 ratings each, 10% repeated): estimated S 95% in 0.32 to 0.49; power taste 100%, leniency 100%
+  25 × 12 (48 answers, 96 ratings each, 100% repeated): estimated S 95% in 0.30 to 0.53; power taste 100%, leniency 100%
+  40 × 12 (48 answers, 96 ratings each, 100% repeated): estimated S 95% in 0.30 to 0.54; power taste 100%, leniency 100%
+  25 × 24 (96 answers, 192 ratings each, 100% repeated): estimated S 95% in 0.32 to 0.49; power taste 100%, leniency 100%
+  40 × 24 (96 answers, 192 ratings each, 100% repeated): estimated S 95% in 0.32 to 0.49; power taste 100%, leniency 100%
+
+scenario gemini support-reply: Var task 0.000, α 0.716, β 0.766, βT 0.000, γ 1.310, ε 0.455; S = 0.65
+  10 × 12 (48 answers, 53 ratings each, 10% repeated): estimated S 95% in 0.51 to 0.79; power taste 100%, leniency 100%
+  25 × 12 (48 answers, 53 ratings each, 10% repeated): estimated S 95% in 0.54 to 0.77; power taste 100%, leniency 100%
+  25 × 24 (96 answers, 106 ratings each, 10% repeated): estimated S 95% in 0.56 to 0.74; power taste 100%, leniency 100%
+  25 × 12 (48 answers, 96 ratings each, 100% repeated): estimated S 95% in 0.53 to 0.77; power taste 100%, leniency 100%
+  40 × 12 (48 answers, 96 ratings each, 100% repeated): estimated S 95% in 0.54 to 0.76; power taste 100%, leniency 100%
+  25 × 24 (96 answers, 192 ratings each, 100% repeated): estimated S 95% in 0.56 to 0.73; power taste 100%, leniency 100%
+  40 × 24 (96 answers, 192 ratings each, 100% repeated): estimated S 95% in 0.57 to 0.73; power taste 100%, leniency 100%
+
+scenario gemini launch-post: Var task 0.000, α 0.824, β 0.346, βT 0.000, γ 2.477, ε 0.383; S = 0.75
+  10 × 12 (48 answers, 53 ratings each, 10% repeated): estimated S 95% in 0.62 to 0.87; power taste 100%, leniency 99%
+  25 × 12 (48 answers, 53 ratings each, 10% repeated): estimated S 95% in 0.64 to 0.85; power taste 100%, leniency 100%
+  25 × 24 (96 answers, 106 ratings each, 10% repeated): estimated S 95% in 0.68 to 0.82; power taste 100%, leniency 100%
+  25 × 12 (48 answers, 96 ratings each, 100% repeated): estimated S 95% in 0.65 to 0.85; power taste 100%, leniency 100%
+  40 × 12 (48 answers, 96 ratings each, 100% repeated): estimated S 95% in 0.66 to 0.84; power taste 100%, leniency 100%
+  25 × 24 (96 answers, 192 ratings each, 100% repeated): estimated S 95% in 0.68 to 0.82; power taste 100%, leniency 100%
+  40 × 24 (96 answers, 192 ratings each, 100% repeated): estimated S 95% in 0.69 to 0.81; power taste 100%, leniency 100%
+
+scenario conservative S=0.05: Var task 0.000, α 2.220, β 0.205, βT 0.000, γ 0.117, ε 2.220; S = 0.05
+  10 × 12 (48 answers, 53 ratings each, 10% repeated): estimated S 95% in 0.00 to 0.34; power taste 8%, leniency 94%
+  25 × 12 (48 answers, 53 ratings each, 10% repeated): estimated S 95% in 0.00 to 0.26; power taste 11%, leniency 100%
+  25 × 24 (96 answers, 106 ratings each, 10% repeated): estimated S 95% in 0.00 to 0.19; power taste 15%, leniency 100%
+  25 × 12 (48 answers, 96 ratings each, 100% repeated): estimated S 95% in 0.00 to 0.15; power taste 32%, leniency 100%
+  40 × 12 (48 answers, 96 ratings each, 100% repeated): estimated S 95% in 0.00 to 0.13; power taste 40%, leniency 100%
+  25 × 24 (96 answers, 192 ratings each, 100% repeated): estimated S 95% in 0.00 to 0.12; power taste 43%, leniency 100%
+  40 × 24 (96 answers, 192 ratings each, 100% repeated): estimated S 95% in 0.00 to 0.11; power taste 58%, leniency 100%
+
+scenario conservative S=0.1: Var task 0.000, α 2.220, β 0.205, βT 0.000, γ 0.247, ε 2.220; S = 0.10
+  10 × 12 (48 answers, 53 ratings each, 10% repeated): estimated S 95% in 0.00 to 0.37; power taste 10%, leniency 90%
+  25 × 12 (48 answers, 53 ratings each, 10% repeated): estimated S 95% in 0.00 to 0.29; power taste 20%, leniency 100%
+  25 × 24 (96 answers, 106 ratings each, 10% repeated): estimated S 95% in 0.00 to 0.24; power taste 27%, leniency 100%
+  25 × 12 (48 answers, 96 ratings each, 100% repeated): estimated S 95% in 0.01 to 0.21; power taste 76%, leniency 100%
+  40 × 12 (48 answers, 96 ratings each, 100% repeated): estimated S 95% in 0.03 to 0.19; power taste 87%, leniency 100%
+  25 × 24 (96 answers, 192 ratings each, 100% repeated): estimated S 95% in 0.03 to 0.17; power taste 90%, leniency 100%
+  40 × 24 (96 answers, 192 ratings each, 100% repeated): estimated S 95% in 0.05 to 0.16; power taste 99%, leniency 100%

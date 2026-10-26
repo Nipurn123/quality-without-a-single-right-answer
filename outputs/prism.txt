@@ -1,0 +1,18 @@
+68350 scored responses in 27151 turns of 2+ responses, from 1396 people; 21 models
+
+Held-out conversations (never seen by the fit), 57907 within-turn pairs:
+  shared quality only (θ̄):                variance explained 19.1%, pairs ordered right 62.8%
+  + the person's own taste (θ̄ + δ_u):      variance explained 19.8%, pairs ordered right 63.2%   (λ = 100)
+  control, another person's taste:          variance explained 18.9%, pairs ordered right 62.9%
+  gain from own taste: 0.7% of variance (95% 0.4% to 0.9%); from a random person's: -0.3% (95% -0.4% to -0.2%)
+  with shared weights per conversation type: shared 19.2% → + own taste 19.8%; gain 0.6% (95% 0.4% to 0.9%); another person's: -0.3% (95% -0.4% to -0.2%)
+
+By conversation type (held out):
+  unguided            shared 17.9% → +own taste 18.5%; pairs 62.7% → 63.2%; personal share of predicted differences S ≈ 0.02
+  values guided       shared 21.1% → +own taste 22.0%; pairs 63.0% → 63.3%; personal share of predicted differences S ≈ 0.02
+  controversy guided  shared 18.9% → +own taste 19.6%; pairs 62.9% → 63.1%; personal share of predicted differences S ≈ 0.02
+
+Shared weights (points of the 100-point score per sd of the feature): length (log chars) 7.1, markdown items 1.2, has a list 1.1, asks the user a question 1.0, refusal or disclaimer -2.8
+Shared model effects (best, worst): claude-instant-1 10.9, gpt-4-1106-preview 10.1, Llama-2-7b-chat-hf 9.5 … flan-t5-xxl -19.2, luminous-supreme-control -26.4, luminous-extended-control -28.3
+Measured refusal tolerance (δ on refusals) vs stated importance of safety: r = 0.044 (95% -0.010 to 0.097, 1339 people)
+Measured refusal tolerance (δ on refusals) vs stated importance of creativity: r = -0.056 (95% -0.109 to -0.003, 1339 people)

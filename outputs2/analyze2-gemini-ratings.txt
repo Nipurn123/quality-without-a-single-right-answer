@@ -1,0 +1,21 @@
+══ ratings, docs-qa: 30/30 tasks complete, 793 ratings, 73 repeats (gemini) ══
+  Var task 0.00, Var α within task 2.00, Var β leniency 1.33 (95% 1.12 to 1.58), Var rater×task 0.00 (95% 0.00 to 0.00), Var γ taste 1.31 (95% 0.95 to 1.64), Var ε noise 0.55; F(taste vs noise) 3.36
+  S within a request 0.40 (95% 0.32 to 0.47); natural answers A, B only 0.63 (95% 0.00 to 0.96); over the task type 0.40 (95% 0.32 to 0.47)
+  S within a request by source 100xprompt-1 0.39, 100xprompt-2 0.35, uv 0.47; repeats identical 49%; correctness explains 41% of within-task Var(α)
+  untruncated: Var task -0.385, Var rater×task -0.241
+  scale use: S standardised per rater 0.39 (95% 0.25 to 0.49); S after dividing by each rater's slope 0.46 (95% 0.00 to 0.69); rater SDs priya 2.19, marco 1.39, aisha 1.23, tom 2.02, lena 1.86, kenji 1.93; slopes priya 1.41, marco 0.36, aisha 0.45, tom 1.36, lena 1.13, kenji 1.30
+
+══ ratings, support-reply: 30/30 tasks complete, 786 ratings, 66 repeats (gemini) ══
+  Var task 0.00, Var α within task 0.72, Var β leniency 0.77 (95% 0.64 to 0.91), Var rater×task 0.00 (95% 0.00 to 0.00), Var γ taste 1.31 (95% 1.08 to 1.54), Var ε noise 0.45; F(taste vs noise) 3.88
+  S within a request 0.65 (95% 0.55 to 0.75); natural answers A, B only 0.87 (95% 0.73 to 0.99); over the task type 0.65 (95% 0.55 to 0.75)
+  S within a request by source 100xprompt-1 0.47, 100xprompt-2 0.82, uv 0.72; repeats identical 45%; correctness explains 36% of within-task Var(α)
+  untruncated: Var task -0.100, Var rater×task -0.142
+  scale use: S standardised per rater 0.64 (95% 0.53 to 0.75); S after dividing by each rater's slope 0.66 (95% 0.56 to 0.79); rater SDs priya 1.41, marco 1.43, aisha 1.65, tom 1.63, lena 1.31, kenji 1.53; slopes priya 0.95, marco 0.82, aisha 0.88, tom 1.28, lena 0.90, kenji 1.16
+
+══ ratings, launch-post: 30/30 tasks complete, 797 ratings, 77 repeats (gemini) ══
+  Var task 0.00, Var α within task 0.82, Var β leniency 0.35 (95% 0.27 to 0.45), Var rater×task 0.00 (95% 0.00 to 0.00), Var γ taste 2.48 (95% 2.12 to 2.83), Var ε noise 0.38; F(taste vs noise) 7.47
+  S within a request 0.75 (95% 0.66 to 0.84); natural answers A, B only 1.00 (95% 0.91 to 1.00); over the task type 0.75 (95% 0.66 to 0.84)
+  S within a request by source 100xprompt-1 0.65, 100xprompt-2 0.64, uv 0.92; repeats identical 42%; correctness explains 30% of within-task Var(α)
+  untruncated: Var task -0.119, Var rater×task -0.419
+  scale use: S standardised per rater 0.73 (95% 0.65 to 0.82); S after dividing by each rater's slope 0.82 (95% 0.73 to 0.92); rater SDs priya 1.82, marco 1.80, aisha 1.61, tom 1.68, lena 2.04, kenji 1.67; slopes priya 0.84, marco 0.74, aisha 1.29, tom 0.84, lena 1.00, kenji 1.30
+

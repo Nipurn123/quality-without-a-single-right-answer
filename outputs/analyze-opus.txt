@@ -1,0 +1,40 @@
+judgments: 1416 (126 repeats; 30 by DeepSeek)
+
+══ docs-qa (10 tasks, 360 persona judgments) ══
+  fit, held-out log-likelihood per judgment: M0 correctness only -0.347, M1 +shared -0.165, M2 +personal -0.157
+    shared quality adds 0.182 ± 0.049; personal taste adds 0.008 ± 0.008   (± = 95% interval; a gain whose interval includes 0 is not established)
+    σ_q 7.5, τ 3  →  subjectivity S = 0.14
+  disagreement: two different personas 9% of the time; the same persona with itself on a repeat 9% (35 repeats)
+  transitivity: 0/240 triads cyclic (0%; 25% if choices were random)
+  error edit: clean A beats A-with-one-error 100% of persona votes, 100% of the judge's; fact check flags the error in 10/10, flags a clean answer in A 0, B 0, D 0 of 10
+  padding: padded B beats plain B 7% of persona votes (priya 0%, marco 20%, aisha 20%, tom 0%, lena 0%, kenji 0%); the judge 0%
+  self-preference: the Opus judge prefers the Opus answer over DeepSeek's 90%, the DeepSeek judge 90% (10 items)
+  outcome link (simulated): P(approve as is) = σ(0.65 + 0.93·U); approved 95% when U ≥ 0, 19% when U < 0
+  decision: DeepSeek beats or ties Opus in 27% of persona votes (95% lower bound 17%); non-inferior at δ = 5 points no; answers with a contradicted claim: Opus 0, DeepSeek 0 of 10
+
+══ support-reply (10 tasks, 360 persona judgments) ══
+  fit, held-out log-likelihood per judgment: M0 correctness only -0.382, M1 +shared -0.279, M2 +personal -0.239
+    shared quality adds 0.102 ± 0.054; personal taste adds 0.040 ± 0.016   (± = 95% interval; a gain whose interval includes 0 is not established)
+    σ_q 4.5, τ 3  →  subjectivity S = 0.31
+  disagreement: two different personas 15% of the time; the same persona with itself on a repeat 6% (36 repeats)
+  transitivity: 0/240 triads cyclic (0%; 25% if choices were random)
+  error edit: clean A beats A-with-one-error 100% of persona votes, 100% of the judge's; fact check flags the error in 10/10, flags a clean answer in A 0, B 0, D 0 of 10
+  padding: padded B beats plain B 25% of persona votes (priya 0%, marco 60%, aisha 90%, tom 0%, lena 0%, kenji 0%); the judge 0%
+  self-preference: the Opus judge prefers the Opus answer over DeepSeek's 100%, the DeepSeek judge 100% (10 items)
+  outcome link (simulated): P(approve as is) = σ(1.08 + 1.06·U); approved 94% when U ≥ 0, 31% when U < 0
+  decision: DeepSeek beats or ties Opus in 22% of persona votes (95% lower bound 13%); non-inferior at δ = 5 points no; answers with a contradicted claim: Opus 0, DeepSeek 0 of 10
+
+══ launch-post (10 tasks, 360 persona judgments) ══
+  fit, held-out log-likelihood per judgment: M0 correctness only -0.416, M1 +shared -0.224, M2 +personal -0.216
+    shared quality adds 0.191 ± 0.050; personal taste adds 0.009 ± 0.007   (± = 95% interval; a gain whose interval includes 0 is not established)
+    σ_q 4.5, τ 3  →  subjectivity S = 0.31
+  disagreement: two different personas 12% of the time; the same persona with itself on a repeat 0% (37 repeats)
+  transitivity: 0/240 triads cyclic (0%; 25% if choices were random)
+  error edit: clean A beats A-with-one-error 100% of persona votes, 100% of the judge's; fact check flags the error in 9/10, flags a clean answer in A 0, B 0, D 0 of 10
+  padding: padded B beats plain B 7% of persona votes (priya 0%, marco 30%, aisha 10%, tom 0%, lena 0%, kenji 0%); the judge 0%
+  self-preference: the Opus judge prefers the Opus answer over DeepSeek's 90%, the DeepSeek judge 80% (10 items)
+  outcome link (simulated): P(approve as is) = σ(-0.28 + 1.00·U); approved 87% when U ≥ 0, 11% when U < 0
+  decision: DeepSeek beats or ties Opus in 28% of persona votes (95% lower bound 19%); non-inferior at δ = 5 points no; answers with a contradicted claim: Opus 0, DeepSeek 0 of 10
+
+p-values (raw / Holm over 6): docs-qa shared 0.000/0.000; docs-qa personal 0.058/0.058; support-reply shared 0.000/0.001; support-reply personal 0.000/0.000; launch-post shared 0.000/0.000; launch-post personal 0.018/0.037
+

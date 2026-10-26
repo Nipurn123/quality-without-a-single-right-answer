@@ -1,0 +1,842 @@
+[
+ {
+  "scenario": "opus docs-qa",
+  "trueS": 0.16313150545823785,
+  "R": 10,
+  "T": 12,
+  "rep": 0.1,
+  "answers": 48,
+  "ratingsPerRater": 53,
+  "S95": [
+   0.10234697747190992,
+   0.2645551814763177
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "opus docs-qa",
+  "trueS": 0.16313150545823785,
+  "R": 25,
+  "T": 12,
+  "rep": 0.1,
+  "answers": 48,
+  "ratingsPerRater": 53,
+  "S95": [
+   0.10585180523128612,
+   0.24797559449164483
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "opus docs-qa",
+  "trueS": 0.16313150545823785,
+  "R": 25,
+  "T": 24,
+  "rep": 0.1,
+  "answers": 96,
+  "ratingsPerRater": 106,
+  "S95": [
+   0.1227960560369914,
+   0.22170568049091727
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "opus docs-qa",
+  "trueS": 0.16313150545823785,
+  "R": 25,
+  "T": 12,
+  "rep": 1,
+  "answers": 48,
+  "ratingsPerRater": 96,
+  "S95": [
+   0.11254464344931923,
+   0.24684907368310655
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "opus docs-qa",
+  "trueS": 0.16313150545823785,
+  "R": 40,
+  "T": 12,
+  "rep": 1,
+  "answers": 48,
+  "ratingsPerRater": 96,
+  "S95": [
+   0.11552331322993989,
+   0.24854785861741432
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "opus docs-qa",
+  "trueS": 0.16313150545823785,
+  "R": 25,
+  "T": 24,
+  "rep": 1,
+  "answers": 96,
+  "ratingsPerRater": 192,
+  "S95": [
+   0.12244482144824968,
+   0.2179778751017684
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "opus docs-qa",
+  "trueS": 0.16313150545823785,
+  "R": 40,
+  "T": 24,
+  "rep": 1,
+  "answers": 96,
+  "ratingsPerRater": 192,
+  "S95": [
+   0.12596307826426426,
+   0.22053232362580888
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "opus support-reply",
+  "trueS": 0.2592801021622914,
+  "R": 10,
+  "T": 12,
+  "rep": 0.1,
+  "answers": 48,
+  "ratingsPerRater": 53,
+  "S95": [
+   0.16471776934590432,
+   0.4090073057178422
+  ],
+  "powerTaste": 0.998,
+  "powerLeniency": 0.916
+ },
+ {
+  "scenario": "opus support-reply",
+  "trueS": 0.2592801021622914,
+  "R": 25,
+  "T": 12,
+  "rep": 0.1,
+  "answers": 48,
+  "ratingsPerRater": 53,
+  "S95": [
+   0.17647261933911623,
+   0.38130766277257855
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 0.998
+ },
+ {
+  "scenario": "opus support-reply",
+  "trueS": 0.2592801021622914,
+  "R": 25,
+  "T": 24,
+  "rep": 0.1,
+  "answers": 96,
+  "ratingsPerRater": 106,
+  "S95": [
+   0.1978943956674802,
+   0.3401755183228418
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "opus support-reply",
+  "trueS": 0.2592801021622914,
+  "R": 25,
+  "T": 12,
+  "rep": 1,
+  "answers": 48,
+  "ratingsPerRater": 96,
+  "S95": [
+   0.18331473945331747,
+   0.38291767215389183
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "opus support-reply",
+  "trueS": 0.2592801021622914,
+  "R": 40,
+  "T": 12,
+  "rep": 1,
+  "answers": 48,
+  "ratingsPerRater": 96,
+  "S95": [
+   0.18064131135142258,
+   0.3713894630701511
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "opus support-reply",
+  "trueS": 0.2592801021622914,
+  "R": 25,
+  "T": 24,
+  "rep": 1,
+  "answers": 96,
+  "ratingsPerRater": 192,
+  "S95": [
+   0.2030484243430707,
+   0.3376172330073195
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "opus support-reply",
+  "trueS": 0.2592801021622914,
+  "R": 40,
+  "T": 24,
+  "rep": 1,
+  "answers": 96,
+  "ratingsPerRater": 192,
+  "S95": [
+   0.20001055798704911,
+   0.3317127361046651
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "opus launch-post",
+  "trueS": 0.3773530155104789,
+  "R": 10,
+  "T": 12,
+  "rep": 0.1,
+  "answers": 48,
+  "ratingsPerRater": 53,
+  "S95": [
+   0.26928656046836613,
+   0.5106507096843322
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 0.895
+ },
+ {
+  "scenario": "opus launch-post",
+  "trueS": 0.3773530155104789,
+  "R": 25,
+  "T": 12,
+  "rep": 0.1,
+  "answers": 48,
+  "ratingsPerRater": 53,
+  "S95": [
+   0.2827724391085726,
+   0.5167504401410933
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 0.998
+ },
+ {
+  "scenario": "opus launch-post",
+  "trueS": 0.3773530155104789,
+  "R": 25,
+  "T": 24,
+  "rep": 0.1,
+  "answers": 96,
+  "ratingsPerRater": 106,
+  "S95": [
+   0.30855848920021817,
+   0.46856868028942666
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "opus launch-post",
+  "trueS": 0.3773530155104789,
+  "R": 25,
+  "T": 12,
+  "rep": 1,
+  "answers": 48,
+  "ratingsPerRater": 96,
+  "S95": [
+   0.27864112586198647,
+   0.5181666272815625
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "opus launch-post",
+  "trueS": 0.3773530155104789,
+  "R": 40,
+  "T": 12,
+  "rep": 1,
+  "answers": 48,
+  "ratingsPerRater": 96,
+  "S95": [
+   0.2841886478460652,
+   0.5119417216022215
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 0.999
+ },
+ {
+  "scenario": "opus launch-post",
+  "trueS": 0.3773530155104789,
+  "R": 25,
+  "T": 24,
+  "rep": 1,
+  "answers": 96,
+  "ratingsPerRater": 192,
+  "S95": [
+   0.3051316261428765,
+   0.4657454029910383
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "opus launch-post",
+  "trueS": 0.3773530155104789,
+  "R": 40,
+  "T": 24,
+  "rep": 1,
+  "answers": 96,
+  "ratingsPerRater": 192,
+  "S95": [
+   0.30633665321856013,
+   0.46665909709872344
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini docs-qa",
+  "trueS": 0.39661140420833235,
+  "R": 10,
+  "T": 12,
+  "rep": 0.1,
+  "answers": 48,
+  "ratingsPerRater": 53,
+  "S95": [
+   0.278878935612351,
+   0.5607811971029599
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini docs-qa",
+  "trueS": 0.39661140420833235,
+  "R": 25,
+  "T": 12,
+  "rep": 0.1,
+  "answers": 48,
+  "ratingsPerRater": 53,
+  "S95": [
+   0.2940225530129781,
+   0.5404239150697976
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini docs-qa",
+  "trueS": 0.39661140420833235,
+  "R": 25,
+  "T": 24,
+  "rep": 0.1,
+  "answers": 96,
+  "ratingsPerRater": 106,
+  "S95": [
+   0.3205941541341905,
+   0.49095098817322
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini docs-qa",
+  "trueS": 0.39661140420833235,
+  "R": 25,
+  "T": 12,
+  "rep": 1,
+  "answers": 48,
+  "ratingsPerRater": 96,
+  "S95": [
+   0.2971231334432589,
+   0.5325223814763874
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini docs-qa",
+  "trueS": 0.39661140420833235,
+  "R": 40,
+  "T": 12,
+  "rep": 1,
+  "answers": 48,
+  "ratingsPerRater": 96,
+  "S95": [
+   0.30224982798815025,
+   0.5398151584804152
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini docs-qa",
+  "trueS": 0.39661140420833235,
+  "R": 25,
+  "T": 24,
+  "rep": 1,
+  "answers": 96,
+  "ratingsPerRater": 192,
+  "S95": [
+   0.31749168175966674,
+   0.487982315733899
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini docs-qa",
+  "trueS": 0.39661140420833235,
+  "R": 40,
+  "T": 24,
+  "rep": 1,
+  "answers": 96,
+  "ratingsPerRater": 192,
+  "S95": [
+   0.3234133166801698,
+   0.4897695713744922
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini support-reply",
+  "trueS": 0.6463583863060374,
+  "R": 10,
+  "T": 12,
+  "rep": 0.1,
+  "answers": 48,
+  "ratingsPerRater": 53,
+  "S95": [
+   0.5075382704605755,
+   0.7905056743642528
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini support-reply",
+  "trueS": 0.6463583863060374,
+  "R": 25,
+  "T": 12,
+  "rep": 0.1,
+  "answers": 48,
+  "ratingsPerRater": 53,
+  "S95": [
+   0.5378703151845564,
+   0.7716564457667136
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini support-reply",
+  "trueS": 0.6463583863060374,
+  "R": 25,
+  "T": 24,
+  "rep": 0.1,
+  "answers": 96,
+  "ratingsPerRater": 106,
+  "S95": [
+   0.5607868728975896,
+   0.7362550675205278
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini support-reply",
+  "trueS": 0.6463583863060374,
+  "R": 25,
+  "T": 12,
+  "rep": 1,
+  "answers": 48,
+  "ratingsPerRater": 96,
+  "S95": [
+   0.5293043336405153,
+   0.774291892762669
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini support-reply",
+  "trueS": 0.6463583863060374,
+  "R": 40,
+  "T": 12,
+  "rep": 1,
+  "answers": 48,
+  "ratingsPerRater": 96,
+  "S95": [
+   0.5381916246099211,
+   0.7634960892220924
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini support-reply",
+  "trueS": 0.6463583863060374,
+  "R": 25,
+  "T": 24,
+  "rep": 1,
+  "answers": 96,
+  "ratingsPerRater": 192,
+  "S95": [
+   0.5611799726774311,
+   0.7344072849731677
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini support-reply",
+  "trueS": 0.6463583863060374,
+  "R": 40,
+  "T": 24,
+  "rep": 1,
+  "answers": 96,
+  "ratingsPerRater": 192,
+  "S95": [
+   0.569843664589496,
+   0.725587386693579
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini launch-post",
+  "trueS": 0.750479194821563,
+  "R": 10,
+  "T": 12,
+  "rep": 0.1,
+  "answers": 48,
+  "ratingsPerRater": 53,
+  "S95": [
+   0.6235739683754608,
+   0.867511022096306
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 0.985
+ },
+ {
+  "scenario": "gemini launch-post",
+  "trueS": 0.750479194821563,
+  "R": 25,
+  "T": 12,
+  "rep": 0.1,
+  "answers": 48,
+  "ratingsPerRater": 53,
+  "S95": [
+   0.6439696590673043,
+   0.8462058365829581
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini launch-post",
+  "trueS": 0.750479194821563,
+  "R": 25,
+  "T": 24,
+  "rep": 0.1,
+  "answers": 96,
+  "ratingsPerRater": 106,
+  "S95": [
+   0.6843142934138267,
+   0.8168601423569778
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini launch-post",
+  "trueS": 0.750479194821563,
+  "R": 25,
+  "T": 12,
+  "rep": 1,
+  "answers": 48,
+  "ratingsPerRater": 96,
+  "S95": [
+   0.6535828408421118,
+   0.8490125926210961
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini launch-post",
+  "trueS": 0.750479194821563,
+  "R": 40,
+  "T": 12,
+  "rep": 1,
+  "answers": 48,
+  "ratingsPerRater": 96,
+  "S95": [
+   0.6598308376818243,
+   0.8426815089865825
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini launch-post",
+  "trueS": 0.750479194821563,
+  "R": 25,
+  "T": 24,
+  "rep": 1,
+  "answers": 96,
+  "ratingsPerRater": 192,
+  "S95": [
+   0.6791004062958595,
+   0.8241493739840036
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "gemini launch-post",
+  "trueS": 0.750479194821563,
+  "R": 40,
+  "T": 24,
+  "rep": 1,
+  "answers": 96,
+  "ratingsPerRater": 192,
+  "S95": [
+   0.6867875305958545,
+   0.8149267225492443
+  ],
+  "powerTaste": 1,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "trueS": 0.05,
+  "R": 10,
+  "T": 12,
+  "rep": 0.1,
+  "answers": 48,
+  "ratingsPerRater": 53,
+  "S95": [
+   0,
+   0.3421208816994904
+  ],
+  "powerTaste": 0.078,
+  "powerLeniency": 0.943
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "trueS": 0.05,
+  "R": 25,
+  "T": 12,
+  "rep": 0.1,
+  "answers": 48,
+  "ratingsPerRater": 53,
+  "S95": [
+   0,
+   0.2562085686368819
+  ],
+  "powerTaste": 0.106,
+  "powerLeniency": 0.999
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "trueS": 0.05,
+  "R": 25,
+  "T": 24,
+  "rep": 0.1,
+  "answers": 96,
+  "ratingsPerRater": 106,
+  "S95": [
+   0,
+   0.19496569631085728
+  ],
+  "powerTaste": 0.147,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "trueS": 0.05,
+  "R": 25,
+  "T": 12,
+  "rep": 1,
+  "answers": 48,
+  "ratingsPerRater": 96,
+  "S95": [
+   0,
+   0.15365826516180492
+  ],
+  "powerTaste": 0.322,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "trueS": 0.05,
+  "R": 40,
+  "T": 12,
+  "rep": 1,
+  "answers": 48,
+  "ratingsPerRater": 96,
+  "S95": [
+   0,
+   0.13410232029685504
+  ],
+  "powerTaste": 0.404,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "trueS": 0.05,
+  "R": 25,
+  "T": 24,
+  "rep": 1,
+  "answers": 96,
+  "ratingsPerRater": 192,
+  "S95": [
+   0,
+   0.11728466590021432
+  ],
+  "powerTaste": 0.433,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "conservative S=0.05",
+  "trueS": 0.05,
+  "R": 40,
+  "T": 24,
+  "rep": 1,
+  "answers": 96,
+  "ratingsPerRater": 192,
+  "S95": [
+   0,
+   0.10511719514276142
+  ],
+  "powerTaste": 0.582,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "trueS": 0.1,
+  "R": 10,
+  "T": 12,
+  "rep": 0.1,
+  "answers": 48,
+  "ratingsPerRater": 53,
+  "S95": [
+   0,
+   0.3670833364917326
+  ],
+  "powerTaste": 0.097,
+  "powerLeniency": 0.901
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "trueS": 0.1,
+  "R": 25,
+  "T": 12,
+  "rep": 0.1,
+  "answers": 48,
+  "ratingsPerRater": 53,
+  "S95": [
+   0,
+   0.2939417367788458
+  ],
+  "powerTaste": 0.204,
+  "powerLeniency": 0.999
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "trueS": 0.1,
+  "R": 25,
+  "T": 24,
+  "rep": 0.1,
+  "answers": 96,
+  "ratingsPerRater": 106,
+  "S95": [
+   0,
+   0.24284631395209708
+  ],
+  "powerTaste": 0.274,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "trueS": 0.1,
+  "R": 25,
+  "T": 12,
+  "rep": 1,
+  "answers": 48,
+  "ratingsPerRater": 96,
+  "S95": [
+   0.005709937534101818,
+   0.21274397122173644
+  ],
+  "powerTaste": 0.758,
+  "powerLeniency": 0.999
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "trueS": 0.1,
+  "R": 40,
+  "T": 12,
+  "rep": 1,
+  "answers": 48,
+  "ratingsPerRater": 96,
+  "S95": [
+   0.027704649761707174,
+   0.19455916617984992
+  ],
+  "powerTaste": 0.871,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "trueS": 0.1,
+  "R": 25,
+  "T": 24,
+  "rep": 1,
+  "answers": 96,
+  "ratingsPerRater": 192,
+  "S95": [
+   0.03127739390419942,
+   0.17452087518716594
+  ],
+  "powerTaste": 0.903,
+  "powerLeniency": 1
+ },
+ {
+  "scenario": "conservative S=0.1",
+  "trueS": 0.1,
+  "R": 40,
+  "T": 24,
+  "rep": 1,
+  "answers": 96,
+  "ratingsPerRater": 192,
+  "S95": [
+   0.04878660000103653,
+   0.16195263770149856
+  ],
+  "powerTaste": 0.989,
+  "powerLeniency": 1
+ }
+]

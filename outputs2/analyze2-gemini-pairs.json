@@ -1,0 +1,247 @@
+{
+ "family": "gemini",
+ "pairs": {
+  "docs-qa": {
+   "tasks": 30,
+   "judgments": 1080,
+   "sel": {
+    "sq1": 2,
+    "sq": 4,
+    "tau": 3,
+    "S": 0.36,
+    "atEdge": true
+   },
+   "gains": {
+    "ll": [
+     -0.4724717876523422,
+     -0.3309201186698276,
+     -0.2961546504177922
+    ],
+    "shared": {
+     "m": 0.14155166898251376,
+     "se": 0.016550955346203065,
+     "p": 0
+    },
+    "personal": {
+     "m": 0.03476546825203543,
+     "se": 0.007439052511115222,
+     "p": 0.0000029662630192106576
+    }
+   },
+   "S": 0.36,
+   "ciS": [
+    0.2,
+    0.5
+   ],
+   "bySource": {
+    "100xprompt-1": {
+     "S": 0.3076923076923077,
+     "sq": 3,
+     "tau": 2,
+     "atEdge": false
+    },
+    "100xprompt-2": {
+     "S": 0.3076923076923077,
+     "sq": 6,
+     "tau": 4,
+     "atEdge": true
+    },
+    "uv": {
+     "S": 0.3076923076923077,
+     "sq": 3,
+     "tau": 2,
+     "atEdge": false
+    }
+   },
+   "disagreeBetween": 0.18166666666666667,
+   "disagreeWithin": 0.06306306306306306,
+   "repeats": 111,
+   "triads": 718,
+   "cyclic": 2,
+   "cleanBeatsError": 0.9972222222222222,
+   "paddedBeatsPlain": 0.25,
+   "paddedByPersona": {
+    "priya": 0,
+    "marco": 0.8,
+    "aisha": 0.6333333333333333,
+    "tom": 0,
+    "lena": 0.06666666666666667,
+    "kenji": 0
+   },
+   "judgeOpusPrefersA": 0.9,
+   "judgeDeepseekPrefersA": 0.9333333333333333,
+   "judgeGeminiPrefersA": 0.9,
+   "cheaperPreferredOrTied": 0.2722222222222222,
+   "cheaperLowerBound": 0.21246399571150318,
+   "cheaperBySource": {
+    "100xprompt-1": 0.3333333333333333,
+    "100xprompt-2": 0.21666666666666667,
+    "uv": 0.26666666666666666
+   }
+  },
+  "support-reply": {
+   "tasks": 30,
+   "judgments": 1080,
+   "sel": {
+    "sq1": 2,
+    "sq": 2,
+    "tau": 2,
+    "S": 0.5,
+    "atEdge": false
+   },
+   "gains": {
+    "ll": [
+     -0.4953093255382498,
+     -0.46270340239451296,
+     -0.38797009057552695
+    ],
+    "shared": {
+     "m": 0.03260592314373692,
+     "se": 0.013717758418289388,
+     "p": 0.01745816495125474
+    },
+    "personal": {
+     "m": 0.07473331181898632,
+     "se": 0.009015872308486265,
+     "p": 1.1102230246251565e-16
+    }
+   },
+   "S": 0.5,
+   "ciS": [
+    0.5,
+    0.6923076923076923
+   ],
+   "bySource": {
+    "100xprompt-1": {
+     "S": 0.5,
+     "sq": 2,
+     "tau": 2,
+     "atEdge": false
+    },
+    "100xprompt-2": {
+     "S": 0.6923076923076923,
+     "sq": 2,
+     "tau": 3,
+     "atEdge": true
+    },
+    "uv": {
+     "S": 0.5,
+     "sq": 2,
+     "tau": 2,
+     "atEdge": false
+    }
+   },
+   "disagreeBetween": 0.2803703703703704,
+   "disagreeWithin": 0.08411214953271028,
+   "repeats": 107,
+   "triads": 708,
+   "cyclic": 8,
+   "cleanBeatsError": 0.9833333333333333,
+   "paddedBeatsPlain": 0.34444444444444444,
+   "paddedByPersona": {
+    "priya": 0,
+    "marco": 1,
+    "aisha": 1,
+    "tom": 0.03333333333333333,
+    "lena": 0.03333333333333333,
+    "kenji": 0
+   },
+   "judgeOpusPrefersA": 1,
+   "judgeDeepseekPrefersA": 1,
+   "judgeGeminiPrefersA": 0.9666666666666667,
+   "cheaperPreferredOrTied": 0.37222222222222223,
+   "cheaperLowerBound": 0.3049636539766245,
+   "cheaperBySource": {
+    "100xprompt-1": 0.38333333333333336,
+    "100xprompt-2": 0.4,
+    "uv": 0.3333333333333333
+   }
+  },
+  "launch-post": {
+   "tasks": 30,
+   "judgments": 1080,
+   "sel": {
+    "sq1": 2,
+    "sq": 2,
+    "tau": 3,
+    "S": 0.6923076923076923,
+    "atEdge": false
+   },
+   "gains": {
+    "ll": [
+     -0.5238704093895753,
+     -0.4541351341675266,
+     -0.36940886187320654
+    ],
+    "shared": {
+     "m": 0.06973527522205028,
+     "se": 0.014015911821890693,
+     "p": 6.520140339860703e-7
+    },
+    "personal": {
+     "m": 0.08472627229432018,
+     "se": 0.010788956800593837,
+     "p": 4.107825191113079e-15
+    }
+   },
+   "S": 0.6923076923076923,
+   "ciS": [
+    0.5,
+    0.6923076923076923
+   ],
+   "bySource": {
+    "100xprompt-1": {
+     "S": 0.5,
+     "sq": 3,
+     "tau": 3,
+     "atEdge": false
+    },
+    "100xprompt-2": {
+     "S": 0.5,
+     "sq": 3,
+     "tau": 3,
+     "atEdge": false
+    },
+    "uv": {
+     "S": 0.6923076923076923,
+     "sq": 2,
+     "tau": 3,
+     "atEdge": true
+    }
+   },
+   "disagreeBetween": 0.27111111111111114,
+   "disagreeWithin": 0.07547169811320754,
+   "repeats": 106,
+   "triads": 720,
+   "cyclic": 3,
+   "cleanBeatsError": 1,
+   "paddedBeatsPlain": 0.18888888888888888,
+   "paddedByPersona": {
+    "priya": 0,
+    "marco": 0.7333333333333333,
+    "aisha": 0.36666666666666664,
+    "tom": 0,
+    "lena": 0,
+    "kenji": 0.03333333333333333
+   },
+   "judgeOpusPrefersA": 0.9333333333333333,
+   "judgeDeepseekPrefersA": 0.8666666666666667,
+   "judgeGeminiPrefersA": 0.9666666666666667,
+   "cheaperPreferredOrTied": 0.4222222222222222,
+   "cheaperLowerBound": 0.3524311397608573,
+   "cheaperBySource": {
+    "100xprompt-1": 0.38333333333333336,
+    "100xprompt-2": 0.45,
+    "uv": 0.43333333333333335
+   }
+  },
+  "holm": {
+   "docs-qa shared": 0,
+   "support-reply personal": 5.551115123125783e-16,
+   "launch-post personal": 1.6431300764452317e-14,
+   "launch-post shared": 0.000001956042101958211,
+   "docs-qa personal": 0.000005932526038421315,
+   "support-reply shared": 0.01745816495125474
+  }
+ }
+}

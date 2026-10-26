@@ -1,0 +1,39 @@
+docs-qa
+  opus_judge_padded_beats_plain: 0.0
+  opus_judge_prefers_A_over_B: 0.9
+  opus_judge_clean_beats_error: 1.0
+  gemini_judge_padded_beats_plain: 0.0
+  gemini_judge_prefers_A_over_B: 0.9
+  gemini_judge_clean_beats_error: 1.0
+  same_side_both_portrayals: 0.9018518518518519
+  same_side_n: 1080
+  same_side_ci: (0.882657760764905, 0.9181972719262189)
+  ratings_corr: 0.8208144300490683
+  ratings_mean: (4.519444444444445, 4.258333333333334)
+  ratings_n: 720
+support-reply
+  opus_judge_padded_beats_plain: 0.06666666666666667
+  opus_judge_prefers_A_over_B: 1.0
+  opus_judge_clean_beats_error: 0.9833333333333333
+  gemini_judge_padded_beats_plain: 0.5
+  gemini_judge_prefers_A_over_B: 0.9666666666666667
+  gemini_judge_clean_beats_error: 0.9666666666666667
+  same_side_both_portrayals: 0.8898148148148148
+  same_side_n: 1080
+  same_side_ci: (0.8697403509560007, 0.9071259365162647)
+  ratings_corr: 0.6833794859152379
+  ratings_mean: (4.791666666666667, 4.588888888888889)
+  ratings_n: 720
+launch-post
+  opus_judge_padded_beats_plain: 0.0
+  opus_judge_prefers_A_over_B: 0.9333333333333333
+  opus_judge_clean_beats_error: 1.0
+  gemini_judge_padded_beats_plain: 0.06666666666666667
+  gemini_judge_prefers_A_over_B: 0.9666666666666667
+  gemini_judge_clean_beats_error: 1.0
+  same_side_both_portrayals: 0.8944444444444445
+  same_side_n: 1080
+  same_side_ci: (0.8746997867471903, 0.9113929411938669)
+  ratings_corr: 0.771440895461518
+  ratings_mean: (4.156944444444444, 4.483333333333333)
+  ratings_n: 720

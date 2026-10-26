@@ -1,0 +1,26 @@
+══ docs-qa: 30 tasks, 1080 persona judgments (opus) ══
+  held-out ll: M0 -0.410, M1 -0.199, M2 -0.188; shared +0.212 ± 0.033 (p 0.0000), personal +0.010 ± 0.005 (p 0.0000)
+  σ_q 4.5, τ 2 → S 0.16 (95% bootstrap over tasks 0.08 to 0.45, B = 200); by source 100xprompt-1 0.45*, 100xprompt-2 0.45*, uv 0.20
+  disagreement between personas 10%, within on repeats 5% (113); cyclic triads 1/720
+  clean A beats one-error C 100%; padded D beats B 7% (priya 0%, marco 17%, aisha 23%, tom 0%, lena 0%, kenji 0%)
+  judges prefer A over B: Opus 90%, DeepSeek 93%, Gemini n/a
+  cheaper model preferred or tied 27% (95% lower bound 21%); by source 100xprompt-1 27%, 100xprompt-2 32%, uv 23%
+
+══ support-reply: 30 tasks, 1080 persona judgments (opus) ══
+  held-out ll: M0 -0.401, M1 -0.298, M2 -0.274; shared +0.103 ± 0.033 (p 0.0000), personal +0.024 ± 0.011 (p 0.0000)
+  σ_q 3, τ 2 → S 0.31 (95% bootstrap over tasks 0.16 to 0.44, B = 200); by source 100xprompt-1 0.50*, 100xprompt-2 0.31, uv 0.10
+  disagreement between personas 16%, within on repeats 4% (105); cyclic triads 5/708
+  clean A beats one-error C 98%; padded D beats B 29% (priya 0%, marco 77%, aisha 97%, tom 0%, lena 0%, kenji 0%)
+  judges prefer A over B: Opus 100%, DeepSeek 100%, Gemini n/a
+  cheaper model preferred or tied 17% (95% lower bound 12%); by source 100xprompt-1 22%, 100xprompt-2 23%, uv 7%
+
+══ launch-post: 30 tasks, 1080 persona judgments (opus) ══
+  held-out ll: M0 -0.406, M1 -0.249, M2 -0.239; shared +0.157 ± 0.031 (p 0.0000), personal +0.010 ± 0.009 (p 0.0339)
+  σ_q 4.5, τ 4 → S 0.44 (95% bootstrap over tasks 0.26 to 0.50, B = 200); by source 100xprompt-1 0.39, 100xprompt-2 0.50*, uv 0.50
+  disagreement between personas 13%, within on repeats 6% (106); cyclic triads 1/720
+  clean A beats one-error C 100%; padded D beats B 8% (priya 0%, marco 33%, aisha 13%, tom 0%, lena 0%, kenji 0%)
+  judges prefer A over B: Opus 93%, DeepSeek 87%, Gemini n/a
+  cheaper model preferred or tied 31% (95% lower bound 25%); by source 100xprompt-1 28%, 100xprompt-2 35%, uv 30%
+
+p (raw / Holm over 6): docs-qa shared 0.0000/0.0000; docs-qa personal 0.0000/0.0001; support-reply shared 0.0000/0.0000; support-reply personal 0.0000/0.0001; launch-post shared 0.0000/0.0000; launch-post personal 0.0339/0.0339
+
